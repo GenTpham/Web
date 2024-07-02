@@ -1,0 +1,138 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #003366;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+        .nav_links li a {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: white; /* Màu chữ trắng */
+            text-decoration: none;
+            transition: all 0.3s ease 0;
+        }
+
+            .nav_links li a:hover {
+                color: #0088a9; /* Màu chữ khi hover */
+            }
+
+/* CSS cho nút mở menu */
+#mo-button-open {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30px;
+    padding: 5px;
+}
+
+    #mo-button-open > div {
+        width: 30px;
+        height: 3px;
+        background-color: white; /* Màu dòng hamburger trắng */
+    }
+
+/* CSS cho phần overlay của menu */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #003366; /* Màu nền xanh đậm */
+    z-index: 100;
+    display: none;
+}
+
+/* CSS cho nút đóng menu */
+.close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 5em;
+    cursor: pointer;
+    color: white; /* Màu chữ trắng */
+    z-index: 101;
+    transition: font-size 0.5s ease, top 0.5s ease, right 0.5s ease;
+}
+
+    .close-btn:hover {
+        font-size: 6em;
+        top: 10px;
+        right: 10px;
+    }
+
+.menu-content {
+    padding: 210px;
+    text-align: center;
+    color: white; /* Màu chữ trắng */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+    .menu-content p a {
+        color: white; /* Màu chữ trắng */
+    }
+
+.open {
+    animation: slideDown 0.5s forwards;
+    display: block;
+}
+
+.close {
+    animation: slideUp 0.5s forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}

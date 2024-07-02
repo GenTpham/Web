@@ -1,0 +1,181 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@549&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seaside Hotel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/Contact.css">
+</head>
+<body>
+    <header>
+        <div class="col-md-12" style="background-size: cover;">
+            <!-- logo begin -->
+            <div id="logo" style="background-size: cover;">
+
+                <img class="logo" src="/img/logo.png" alt="Seaside Hotel Logo">
+                </a>
+            </div>
+            <!-- logo close -->
+            <!-- small button begin -->
+            <div id="mo-button-open">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- small button close -->
+        </div>
+    </header>
+
+    <!-- Header kết thúc -->
+    <div class="wrapper">
+        <div class="menu-overlay" id="menuOverlay">
+            <!-- Nút đóng menu -->
+            <span class="close-btn" id="close-btn">&times;</span>
+            <div class="menu-content">
+                <!-- Logo -->
+                <img src="/img/logo.png" alt="Seaside Hotel Logo" style="max-width: 100px; margin-bottom: 30px;">
+                <!-- Các dòng chữ -->
+                <p><a asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a></p>
+                <p><a asp-area="" asp-controller="Rooms" asp-action="Index">Phòng</a></p>
+                <p><a asp-area="" asp-controller="Home" asp-action="Booking">Đặt phòng</a></p>
+                <p><a asp-area="" asp-controller="Home" asp-action="About">Giới thiệu</a></p>
+                <p><a asp-area="" asp-controller="Home" asp-action="Contact">Liên hệ</a></p>
+            </div>
+        </div>
+        <div class="slide-content">
+            <h4>Make a</h4>
+            <h1>CONTACT</h1>
+        </div>
+        <div class="de-content-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="hotel">
+                            <h2>SEASIDE MIAMI</h2>
+                            <p><span>Address:</span> 11/16 Thoại Ngọc Hầu, TP.HCM</p>
+                            <p><span>Phone:</span> 096 7285710</p>
+                            <p><span>Fax:</span> 096 7285710</p>
+                            <p><span>Email:</span> contact@example.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hotel">
+                            <h2>SEASIDE MALDIVES</h2>
+                            <p><span>Address:</span> 1557 TL8, Củ Chi, TP.HCM</p>
+                            <p><span>Phone:</span> 090 1234567</p>
+                            <p><span>Fax:</span> 090 1234567</p>
+                            <p><span>Email:</span> contact@example.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.7984289298029!2d106.611087!3d10.980358899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d357d22db405%3A0x4a230d897ca65ede!2zQ-G7rWEgaMOgbmcgUGjhu58gTmFtIMSQ4buLbmg!5e0!3m2!1svi!2s!4v1719066065856!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-8">
+                        <div class="message-form">
+                            <h2>SEND US MESSAGE</h2>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-col">
+                                        <input type="text" placeholder="Your Name">
+                                        <input type="email" placeholder="Your Email">
+                                        <input type="tel" placeholder="Your Phone">
+                                    </div>
+                                    <div class="form-col">
+                                        <textarea placeholder="Your Message"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit">SUBMIT FORM</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @RenderBody();
+    <div id="social-links">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+    </div>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-text">
+            
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menuOverlay");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+
+        // Gắn sự kiện click với nút hamburger
+        document.getElementById("mo-button-open").addEventListener("click", toggleMenu);
+
+        // JavaScript cho nút mở menu
+        document.getElementById('mo-button-open').addEventListener('click', function () {
+            var menuOverlay = document.getElementById('menuOverlay');
+            menuOverlay.classList.add('open');
+            menuOverlay.classList.remove('close');
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function () {
+            var menuOverlay = document.getElementById('menuOverlay');
+            var menuContent = document.querySelector('.menu-content');
+            menuOverlay.classList.add('close');
+            setTimeout(function () {
+                menuOverlay.classList.remove('close');
+                menuOverlay.style.display = 'none';
+            }, 500); // Đợi cho đến khi animation kết thúc
+        });
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var contentOverlay = document.querySelector('.de-content-overlay');
+            contentOverlay.classList.add('hidden');
+
+            setTimeout(function () {
+                contentOverlay.classList.remove('hidden');
+                contentOverlay.classList.add('show');
+            }, 500);
+        });
+
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

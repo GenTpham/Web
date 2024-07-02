@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Demo.Models.Room>
+@{
+    ViewData["Title"] = "RoomList";
+    Layout = "_Rooms";
+}
+<div class="container hidden">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-6">
+                <div class="big-box">
+                <div class="content">
+                    <div class="image">
+                        <img src="@item.ImageUrl" alt="Standard Room">
+                        <img class="hover-image" src="/Room/Images/1-alt.jpg" alt="Standard Room Hover">
+                        <div class="label">@item.Status</div>
+                    </div>
+                    <div class="text-content">
+                        <div class="room-info">
+                            <span><i class="fas fa-user"></i> 2 Khách</span>
+                            <span><i class="fas fa-expand"></i> 15m&sup2;</span>
+                        </div>
+                        <div class="room-details">
+                            <h3>@item.RoomType</h3>
+                            <p>@item.Description</p>
+                            <a href="/detailrooms/detailrooms.html" class="submit-form">Đặt phòng ngay chỉ với @item.Price VND</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+        </div>
+
+        }
+    </div>
+    
+</div>

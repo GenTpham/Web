@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<Demo.Models.Room>
+<div class="container my-5">
+    <div class="row">
+         @foreach (var item in Model)
+         {
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card room-card">
+                    <img class="card-img-top" src="@item.ImageUrl" alt="@item.RoomNumber">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.RoomType</h5>
+                        <p class="card-text">@item.Description</p>
+                        <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+         }
+  
+    </div>
+</div>

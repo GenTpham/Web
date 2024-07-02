@@ -1,0 +1,66 @@
+﻿/* Các quy tắc CSS khác */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #003366;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex; /* Đảm bảo các mục nav nằm ngang hàng */
+    align-items: center; /* Căn giữa các mục nav theo chiều dọc */
+}
+
+    .nav_links li {
+        padding: 0px 20px;
+    }
+
+        .nav_links li a {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: white; /* Màu chữ trắng */
+            text-decoration: none;
+            transition: all 0.3s ease 0;
+        }
+
+            .nav_links li a:hover {
+                color: #0088a9; /* Màu chữ khi hover */
+            }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/* CSS cho phần phòng */
+.room-card {
+    margin-bottom: 30px;
+}

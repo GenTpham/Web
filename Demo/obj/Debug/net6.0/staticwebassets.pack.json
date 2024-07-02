@@ -1,0 +1,405 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Demo.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Demo.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\About.css",
+      "PackagePath": "staticwebassets\\css\\About.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Booking.css",
+      "PackagePath": "staticwebassets\\css\\Booking.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Contact.css",
+      "PackagePath": "staticwebassets\\css\\Contact.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Room.css",
+      "PackagePath": "staticwebassets\\css\\Room.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Style_Home.css",
+      "PackagePath": "staticwebassets\\css\\Style_Home.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\rooms.css",
+      "PackagePath": "staticwebassets\\css\\rooms.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\1 (1).jpg",
+      "PackagePath": "staticwebassets\\img\\About\\1 (1).jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\About\\2.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\background2.jpg",
+      "PackagePath": "staticwebassets\\img\\About\\background2.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\car-parking-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\img\\About\\car-parking-svgrepo-com.svg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\coffee-table-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\img\\About\\coffee-table-svgrepo-com.svg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\gym.svg",
+      "PackagePath": "staticwebassets\\img\\About\\gym.svg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\laundry-machine-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\img\\About\\laundry-machine-svgrepo-com.svg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\meeting-explain-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\img\\About\\meeting-explain-svgrepo-com.svg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\restaurant-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\img\\About\\restaurant-svgrepo-com.svg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\safebox-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\img\\About\\safebox-svgrepo-com.svg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\screen-tv-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\img\\About\\screen-tv-svgrepo-com.svg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\swimming-pool-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\img\\About\\swimming-pool-svgrepo-com.svg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\Contact\\9.jpg",
+      "PackagePath": "staticwebassets\\img\\Contact\\9.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\_fa02af79-da22-4a12-b7c2-7fde6b6523ad.jpg",
+      "PackagePath": "staticwebassets\\img\\_fa02af79-da22-4a12-b7c2-7fde6b6523ad.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\background.jpg",
+      "PackagePath": "staticwebassets\\img\\background.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\1-alt.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\1-alt.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\1.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\2 (1).jpg",
+      "PackagePath": "staticwebassets\\img\\room\\2 (1).jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\2-alt.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\2-alt.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\3-alt.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\3-alt.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\3.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\4-alt.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\4-alt.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\4.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\5-alt.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\5-alt.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\5.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\6-alt.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\6-alt.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\6.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room\\background.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\background.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Demo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Demo.props",
+      "PackagePath": "build\\Demo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Demo.props",
+      "PackagePath": "buildMultiTargeting\\Demo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Demo.props",
+      "PackagePath": "buildTransitive\\Demo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

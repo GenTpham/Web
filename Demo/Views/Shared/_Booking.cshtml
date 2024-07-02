@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@549&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khách sạn Seaside</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/Booking.css">
+</head>
+<body>
+    <header>
+        <div class="col-md-12" style="background-size: cover;">
+            <!-- Bắt đầu logo -->
+            <div id="logo" style="background-size: cover;">
+                <img class="logo" src="/img/logo.png" alt="Logo khách sạn Seaside">
+            </div>
+            <!-- Kết thúc logo -->
+            <!-- Bắt đầu nút nhỏ -->
+            <div id="mo-button-open">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Kết thúc nút nhỏ -->
+        </div>
+    </header>
+
+    <!-- Kết thúc Header -->
+    <div class="wrapper">
+        <div class="menu-overlay" id="menuOverlay">
+            <!-- Nút đóng menu -->
+            <span class="close-btn" id="close-btn">&times;</span>
+
+            <div class="menu-content">
+                <!-- Logo -->
+                <img src="/img/logo.png" alt="Logo khách sạn Seaside" style="max-width: 100px; margin-bottom: 30px;">
+                <!-- Các dòng chữ -->
+                <p><a asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a></p>
+                <p><a asp-area="" asp-controller="Rooms" asp-action="Index">Phòng</a></p>
+                <p><a asp-area="" asp-controller="Home" asp-action="Booking">Đặt phòng</a></p>
+                <p><a asp-area="" asp-controller="Home" asp-action="About">Giới thiệu</a></p>
+                <p><a asp-area="" asp-controller="Home" asp-action="Contact">Liên hệ</a></p>
+            </div>
+        </div>
+        <div id="slider">
+            <div class="slide-content">
+                <p>Đặt phòng</p>
+            </div>
+        </div>
+        <!-- booking.html -->
+        <div class="de-content-overlay" style="background-size: cover;">
+            <form name="contactform">
+                <h4>Chọn ngày</h4>
+                <div class="date-range">
+                    <input type="text" id="date-range" class="form-control" name="date" placeholder="Chọn khoảng ngày">
+                </div>
+                <div class="guests-n-rooms" style="background-size: cover;">
+                    <div class="row" style="background-size: cover;">
+                        <div class="col-md-4" style="background-size: cover;">
+                            <h4>Người lớn</h4>
+                            <div class="de-number" style="background-size: cover;">
+                                <span class="d-minus" onclick="decreaseValue(this)">-</span>
+                                <input class="input" type="text" value="1">
+                                <span class="d-plus" onclick="increaseValue(this)">+</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-size: cover;">
+                            <h4>Trẻ em</h4>
+                            <div class="de-number" style="background-size: cover;">
+                                <span class="d-minus" onclick="decreaseValue(this)">-</span>
+                                <input class="input" type="text" value="0">
+                                <span class="d-plus" onclick="increaseValue(this)">+</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-size: cover;">
+                            <h4>Phòng</h4>
+                            <div id="de-number" class="de-number" style="background-size: cover;">
+                                <span class="d-minus" onclick="decreaseValue(this)">-</span>
+                                <input class="input" type="text" value="1">
+                                <span class="d-plus" onclick="increaseValue(this)">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4>Chọn loại phòng</h4>
+                <select name="room" id="room-select">
+                    <option value="standard">Phòng tiêu chuẩn</option>
+                    <option value="deluxe">Phòng Deluxe</option>
+                    <option value="premier">Phòng Premier</option>
+                    <option value="family">Phòng Suite Gia đình</option>
+                    <option value="luxury">Phòng Suite Sang trọng</option>
+                    <option value="president">Phòng Suite Tổng thống</option>
+                </select>
+                <h4>Thông tin chi tiết</h4>
+                <input type="text" id="name" placeholder="Tên khách hàng" required="">
+                <input type="text" id="email" placeholder="Email" required="">
+                <input type="text" id="phone" placeholder="Số điện thoại" required>
+                <input type="text" id="cccd" placeholder="Số căn cước" required>
+                <input type="text" id="people" placeholder="Số người" required>
+                <textarea name="message" id="message" placeholder="Thông tin đặt cọc" style="height: 216px;"></textarea>
+                <button type="submit" class="submit-form">Xong</button>
+            </form>
+        </div>
+        <div id="social-links">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    </div>
+        @RenderBody();
+    <footer class="site-footer">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menuOverlay");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+
+        // Gắn sự kiện click với nút hamburger
+        document.getElementById("mo-button-open").addEventListener("click", toggleMenu);
+
+        // JavaScript cho nút mở menu
+        document.getElementById('mo-button-open').addEventListener('click', function () {
+            var menuOverlay = document.getElementById('menuOverlay');
+            menuOverlay.classList.add('open');
+            menuOverlay.classList.remove('close');
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function () {
+            var menuOverlay = document.getElementById('menuOverlay');
+            var menuContent = document.querySelector('.menu-content');
+            menuOverlay.classList.add('close');
+            setTimeout(function () {
+                menuOverlay.classList.remove('close');
+                menuOverlay.style.display = 'none';
+            }, 500); // Đợi cho đến khi animation kết thúc
+        });
+
+        // Đảm bảo rằng DOM đã sẵn sàng
+        document.addEventListener('DOMContentLoaded', function () {
+            // Lắng nghe sự kiện 'animationend' trên slider
+            var slider = document.querySelector('.slide-content'); // Thay thế '.slide-content' bằng selector phù hợp của slider
+            slider.addEventListener('animationend', function () {
+                // Khi hiệu ứng của slider kết thúc, thực hiện hiệu ứng slide up để hiển thị .container và .row.align-items-center
+                showElements('.container, .row.align-items-center');
+            });
+        });
+
+        function showElements(selector) {
+            // Lấy tất cả các phần tử cần áp dụng hiệu ứng
+            var elements = document.querySelectorAll(selector);
+            // Duyệt qua từng phần tử và áp dụng hiệu ứng
+            elements.forEach(function (element) {
+                // Loại bỏ class 'hidden' để hiển thị phần tử
+                element.classList.remove('hidden');
+                // Áp dụng animation slideUpToShow
+                element.style.animation = 'slideUpToShow 1.8s forwards';
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttonsMinus = document.querySelectorAll('.d-minus');
+            const buttonsPlus = document.querySelectorAll('.d-plus');
+
+            buttonsMinus.forEach(button => {
+                button.addEventListener('click', function () {
+                    const input = this.nextElementSibling;
+                    let value = parseInt(input.value, 10);
+                    if (!isNaN(value) && value > 0) {
+                        input.value = value - 1;
+                    }
+                });
+            });
+
+            buttonsPlus.forEach(button => {
+                button.addEventListener('click', function () {
+                    const input = this.previousElementSibling;
+                    let value = parseInt(input.value, 10);
+                    if (!isNaN(value)) {
+                        input.value = value + 1;
+                    }
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var dateRangeInput = document.getElementById('date-range');
+
+            flatpickr(dateRangeInput, {
+                mode: 'range',
+                dateFormat: 'm-d-Y',
+                defaultDate: [new Date(), new Date()],
+                onChange: function (selectedDates, dateStr, instance) {
+                    // Xử lý sự kiện khi ngày được chọn
+                    console.log(selectedDates);
+                }
+            });
+        });
+
+        // Hiệu ứng cho form
+        document.addEventListener('DOMContentLoaded', function () {
+            var bookingForm = document.querySelector('form[name="contactform"]');
+            bookingForm.classList.add('hidden');
+
+            setTimeout(function () {
+                bookingForm.classList.remove('hidden');
+                bookingForm.style.animation = 'slideUpToShow 1s forwards';
+            }, 500);
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

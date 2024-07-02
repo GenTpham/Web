@@ -1,0 +1,452 @@
+﻿/* booking.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../img/About/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+    body::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+
+.col-md-12 {
+    background: transparent;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    background: none;
+    padding: 10px 0px 0px 12px;
+}
+
+#mo-button-open {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30px;
+    padding: 5px;
+}
+
+    #mo-button-open > div {
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+    }
+
+.menu-content {
+    padding: 210px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpToShow {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 5em;
+    cursor: pointer;
+    color: #efefef;
+    z-index: 101;
+    transition: font-size 0.5s ease, top 0.5s ease, right 0.5s ease;
+}
+
+.menu-overlay.open .close-btn {
+    font-size: 5em;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-overlay.close .close-btn {
+    font-size: 5em;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+    .menu-overlay.open {
+        display: flex;
+        animation: slideDown 0.5s forwards;
+    }
+
+    .menu-overlay.close {
+        display: block;
+        animation: slideUp 0.5s forwards;
+    }
+
+#content {
+    padding-top: 80px;
+}
+
+
+.slide-content p {
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 60px;
+    padding: 40px;
+    margin-top: 46px;
+    letter-spacing: 8px;
+    animation: zoomIn 1s ease forwards;
+}
+
+.slide-content p {
+    animation-fill-mode: forwards;
+}
+
+
+
+.slide-content p {
+    margin-top: -46px;
+}
+
+.slide-content {
+    padding-top: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#social-links {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+    #social-links a {
+        display: block;
+        color: #ffffff;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+
+#menu-overlay > p {
+    font-family: Montserrat;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: block;
+    cursor: pointer;
+    letter-spacing: 5px;
+    transition: font-size 0.5s ease, transform 0.5s ease;
+    transition: color 0.01s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-overlay.open .menu-content p {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.menu-overlay.close .menu-content p {
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.menu-overlay p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    .menu-overlay p a:hover {
+        color: #CA8E46;
+    }
+
+.site-footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+    .site-footer p {
+        letter-spacing: normal;
+        margin-top: 20px;
+        font-family: 'Heebo';
+        font-size: 16px;
+    }
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.de-content-overlay {
+    min-width: 500px;
+    margin: 0 25% 0 25%;
+    margin-bottom: 100px;
+    overflow: hidden;
+    padding: 30px;
+    background: rgb(49 43 36 / 60%);
+}
+
+    .de-content-overlay h4 {
+        font-family: "Montserrat";
+        font-size: 18px;
+        color: #ECEFF3;
+        font-weight: 600;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+/* booking.css */
+.de-number input[type="text"] {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    font-size: 16px;
+}
+
+.date-range input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: transparent;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#room-select {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-family: Heebo;
+    font-size: 16px;
+}
+
+    #room-select option {
+        color: #000000; /* Màu chữ của option là đen */
+        background-color: #ffffff; /* Đặt nền trắng để dễ đọc chữ đen */
+    }
+
+#name, #email, #phone, #cccd, #people {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Heebo;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#message {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Heebo;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.submit-form {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Heebo;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.d-minus, .d-plus {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #CA8E46;
+    color: #fff;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.submit-form {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+    .submit-form:hover {
+        background-color: #CA8E46;
+    }
+
+    .submit-form::before {
+        content: "";
+        position: absolute;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #CA8E46;
+        transition: left 0.5s;
+        z-index: -1;
+    }
+
+    .submit-form:hover::before {
+        left: 0;
+    }
+
+.de-number input[type="text"],
+.date-range input,
+#room-select,
+#name,
+#email,
+#phone,
+#message,
+#cccd,
+#people {
+    border: 0.5px solid #ffffff; /* Thêm border màu trắng */
+}
+
+.de-number,
+.date-range,
+#room-select,
+#name,
+#email,
+#phone,
+#message, #cccd, #people {
+    margin-bottom: 9px;
+}
+
+/* hieu ung cho form */
+form[name="contactform"] {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+    form[name="contactform"].hidden {
+        display: none;
+    }
+
+@keyframes slideUpToShow {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#name:focus,
+#email:focus,
+#message:focus,
+#phone:focus,
+#cccd:focus
+#people:focus {
+    border-color: #CA8E46; /* Màu border khi focus */
+    outline: none; /* Loại bỏ đường viền khi focus */
+}
+
+#name, #email, #message, #phone, #cccd, #people {
+    border: 1px solid #fff; /* Border màu trắng mặc định */
+    transition: border-color 0.3s ease; /* Hiệu ứng transition */
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước của input */
+    color: #fff; /* Màu chữ mặc định */
+}

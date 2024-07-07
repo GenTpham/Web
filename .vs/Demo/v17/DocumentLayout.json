@@ -3,96 +3,136 @@
   "WorkspaceRootPath": "E:\\New folder (3)\\Demo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\_contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\_contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\_booking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\_booking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\_about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\_about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\components\\navbar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\components\\navbar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\_rooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\_rooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\css\\style_home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\wwwroot\\css\\style_home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\css\\rooms.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\wwwroot\\css\\rooms.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\css\\room.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\wwwroot\\css\\room.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\css\\contact.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\wwwroot\\css\\contact.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\css\\about.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\wwwroot\\css\\about.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\css\\booking.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\wwwroot\\css\\booking.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\home\\booking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\home\\booking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\rooms\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\rooms\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\_booking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\_booking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\_services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\_services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\_about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\_about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\_contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\_contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\rooms\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\rooms\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\rooms\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\rooms\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\_rooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\_rooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\shared\\components\\navbar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\shared\\components\\navbar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -131,20 +171,8 @@
       "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\navbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\navbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
@@ -153,22 +181,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\img\\_fa02af79-da22-4a12-b7c2-7fde6b6523ad.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\wwwroot\\img\\_fa02af79-da22-4a12-b7c2-7fde6b6523ad.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\wwwroot\\img\\logo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\wwwroot\\img\\logo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -181,10 +193,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -194,528 +202,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "site.css",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "Demo\\wwwroot\\css\\site.css",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "Demo\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-30T12:23:59.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Style_Home.css",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Style_Home.css",
-              "RelativeDocumentMoniker": "Demo\\wwwroot\\css\\Style_Home.css",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Style_Home.css",
-              "RelativeToolTip": "Demo\\wwwroot\\css\\Style_Home.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-30T12:15:08.972Z",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Demo\\Controllers\\UsersController.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Demo\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T12:29:18.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Contact.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Contact.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Contact.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Contact.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Shared\\_Contact.cshtml",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAADcAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T17:43:49.504Z",
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Demo\\Models\\User.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\User.cs",
+              "RelativeToolTip": "Demo\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T12:25:53.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Rooms.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Rooms.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Rooms.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Rooms.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Shared\\_Rooms.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T15:36:10.481Z",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Program.cs",
+              "RelativeDocumentMoniker": "Demo\\Program.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Program.cs",
+              "RelativeToolTip": "Demo\\Program.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T12:20:34.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\Components\\Navbar\\Default.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\Components\\Navbar\\Default.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\Components\\Navbar\\Default.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Shared\\Components\\Navbar\\Default.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-30T13:58:41.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_About.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_About.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_About.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_About.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Shared\\_About.cshtml",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAAADEAAABcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T17:26:59.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Booking.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Booking.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Booking.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Booking.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Shared\\_Booking.cshtml",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAACwAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T17:59:54.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-30T11:59:37.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "rooms.css",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\rooms.css",
-              "RelativeDocumentMoniker": "Demo\\wwwroot\\css\\rooms.css",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\rooms.css",
-              "RelativeToolTip": "Demo\\wwwroot\\css\\rooms.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-02T15:40:38.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Room.css",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Room.css",
-              "RelativeDocumentMoniker": "Demo\\wwwroot\\css\\Room.css",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Room.css",
-              "RelativeToolTip": "Demo\\wwwroot\\css\\Room.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-30T12:25:14.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Contact.css",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Contact.css",
-              "RelativeDocumentMoniker": "Demo\\wwwroot\\css\\Contact.css",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Contact.css",
-              "RelativeToolTip": "Demo\\wwwroot\\css\\Contact.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-02T17:48:43.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "About.css",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\About.css",
-              "RelativeDocumentMoniker": "Demo\\wwwroot\\css\\About.css",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\About.css",
-              "RelativeToolTip": "Demo\\wwwroot\\css\\About.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-02T17:36:23.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Booking.css",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Booking.css",
-              "RelativeDocumentMoniker": "Demo\\wwwroot\\css\\Booking.css",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\Booking.css",
-              "RelativeToolTip": "Demo\\wwwroot\\css\\Booking.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-02T18:03:00.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Demo\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Demo\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAABwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T14:57:34.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Booking.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Booking.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Home\\Booking.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Booking.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Home\\Booking.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T18:04:25.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\About.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Home\\About.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\About.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Home\\About.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T17:31:34.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Contact.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Home\\Contact.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Contact.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Home\\Contact.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T17:46:26.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Index.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Index.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Index.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Rooms\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-30T12:01:58.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-30T12:00:11.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Employees\\Index.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Employees\\Index.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Employees\\Index.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Employees\\Index.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADUAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T17:13:45.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Edit.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Edit.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Rooms\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-30T13:10:14.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Create.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Create.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Create.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Rooms\\Create.cshtml",
-              "ViewState": "AQIAACgAAAAAAAAAAAAAADkAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T16:54:22.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Create.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Create.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Create.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Categories\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T14:51:52.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Index.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Index.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Index.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Categories\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T14:50:14.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Details.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Details.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Details.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Rooms\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T14:53:21.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Edit.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Edit.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Categories\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T14:50:13.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Details.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Details.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Details.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Categories\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T14:51:53.289Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Delete.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Delete.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Categories\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T14:51:51.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T16:55:39.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "Demo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-30T12:39:58.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\_ViewStart.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Demo\\Views\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-30T13:09:02.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Demo\\Views\\_ViewImports.cshtml",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Demo\\Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-30T13:09:02.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Room.cs",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Room.cs",
-              "RelativeDocumentMoniker": "Demo\\Models\\Room.cs",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Room.cs",
-              "RelativeToolTip": "Demo\\Models\\Room.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:13:49.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Navbar.cs",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Navbar.cs",
-              "RelativeDocumentMoniker": "Demo\\Models\\Navbar.cs",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Navbar.cs",
-              "RelativeToolTip": "Demo\\Models\\Navbar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T14:03:02.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Demo\\Models\\Employee.cs",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Employee.cs",
-              "RelativeToolTip": "Demo\\Models\\Employee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:16:00.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Category.cs",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Demo\\Models\\Category.cs",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Category.cs",
-              "RelativeToolTip": "Demo\\Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:12:17.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "favicon.ico - Icon [32x32, 32 bit, BMP]",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\favicon.ico",
-              "RelativeDocumentMoniker": "Demo\\wwwroot\\favicon.ico",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
-              "RelativeToolTip": "Demo\\wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2024-07-02T15:43:13.637Z",
-              "EditorCaption": " - Icon [32x32, 32 bit, BMP]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "RoomsController.cs",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\RoomsController.cs",
-              "RelativeDocumentMoniker": "Demo\\Controllers\\RoomsController.cs",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\RoomsController.cs",
-              "RelativeToolTip": "Demo\\Controllers\\RoomsController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:22:03.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "_fa02af79-da22-4a12-b7c2-7fde6b6523ad.jpg - Bitmap [1024x1024, 24 bit, JPG]",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\_fa02af79-da22-4a12-b7c2-7fde6b6523ad.jpg",
-              "RelativeDocumentMoniker": "Demo\\wwwroot\\img\\_fa02af79-da22-4a12-b7c2-7fde6b6523ad.jpg",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\_fa02af79-da22-4a12-b7c2-7fde6b6523ad.jpg - Bitmap [1024x1024, 24 bit, JPG]",
-              "RelativeToolTip": "Demo\\wwwroot\\img\\_fa02af79-da22-4a12-b7c2-7fde6b6523ad.jpg - Bitmap [1024x1024, 24 bit, JPG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-07-02T15:07:55.856Z",
-              "EditorCaption": " - Bitmap [1024x1024, 24 bit, JPG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "logo.png - PNG [134x50, 32 bit, PNG]",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\logo.png",
-              "RelativeDocumentMoniker": "Demo\\wwwroot\\img\\logo.png",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\logo.png - PNG [134x50, 32 bit, PNG]",
-              "RelativeToolTip": "Demo\\wwwroot\\img\\logo.png - PNG [134x50, 32 bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-07-02T15:07:58.136Z",
-              "EditorCaption": " - PNG [134x50, 32 bit, PNG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "Demo\\Controllers\\EmployeesController.cs",
@@ -728,20 +258,503 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "CustomersController.cs",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\CustomersController.cs",
-              "RelativeDocumentMoniker": "Demo\\Controllers\\CustomersController.cs",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\CustomersController.cs",
-              "RelativeToolTip": "Demo\\Controllers\\CustomersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Demo\\Models\\Employee.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Employee.cs",
+              "RelativeToolTip": "Demo\\Models\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:23:18.07Z",
+              "WhenOpened": "2024-06-28T11:16:00.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Demo\\Models\\Customer.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Customer.cs",
+              "RelativeToolTip": "Demo\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:16:10.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Demo\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Demo\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T14:57:34.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Booking.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Booking.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Home\\Booking.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Booking.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Home\\Booking.cshtml",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAAAAkAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T18:04:25.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Room.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Demo\\Models\\Room.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Room.cs",
+              "RelativeToolTip": "Demo\\Models\\Room.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:13:49.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Demo\\Models\\Category.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Category.cs",
+              "RelativeToolTip": "Demo\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:12:17.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_About.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_About.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_About.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_About.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Shared\\_About.cshtml",
+              "ViewState": "AQIAACgBAAAAAAAAAAAAAEgBAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T17:26:59.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Booking.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Booking.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Booking.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Booking.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Shared\\_Booking.cshtml",
+              "ViewState": "AQIAABEBAAAAAAAAAAAAABoBAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T17:59:54.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "Demo\\Models\\Booking.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Booking.cs",
+              "RelativeToolTip": "Demo\\Models\\Booking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T08:20:29.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "Demo\\Controllers\\BookingsController.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "Demo\\Controllers\\BookingsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T08:29:34.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Bookings\\Create.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Bookings\\Create.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Bookings\\Create.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Bookings\\Create.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAcwEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-05T08:31:21.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Create.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Create.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Create.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Rooms\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T16:54:22.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Contact.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Contact.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Contact.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Contact.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Shared\\_Contact.cshtml",
+              "ViewState": "AQIAADQBAAAAAAAAAAAcwFIBAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T17:43:49.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-05T08:13:22.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T17:46:26.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Services.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Services.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Services.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Services.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Shared\\_Services.cshtml",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAAB8AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T16:02:19.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAGIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T11:59:37.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Index.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Index.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Index.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Rooms\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T12:01:58.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Edit.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Edit.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Rooms\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T13:10:14.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABYAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T12:00:11.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Delete.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Delete.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Rooms\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-05T08:10:20.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "style.css",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "Demo\\wwwroot\\css\\style.css",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "Demo\\wwwroot\\css\\style.css",
+              "ViewState": "AQIAADwBAAAAAAAAAAAAAE8BAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-04T15:36:45.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Services.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Home\\Services.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Services.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Home\\Services.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T16:07:01.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "Demo\\wwwroot\\css\\bootstrap.min.css",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\bootstrap.min.css",
+              "RelativeToolTip": "Demo\\wwwroot\\css\\bootstrap.min.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-04T15:38:55.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_Rooms.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Rooms.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Rooms.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Rooms.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Shared\\_Rooms.cshtml",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAAAFUAAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T15:36:10.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\Components\\Navbar\\Default.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\Components\\Navbar\\Default.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\Components\\Navbar\\Default.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Shared\\Components\\Navbar\\Default.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T13:58:41.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Home\\About.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T17:31:34.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Employees\\Index.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Employees\\Index.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Employees\\Index.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Employees\\Index.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADUAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T17:13:45.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Create.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Create.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Categories\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T14:51:52.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T14:50:14.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Details.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Details.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Details.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Rooms\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T14:53:21.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Edit.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Categories\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T14:50:13.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Details.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Details.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Details.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Categories\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T14:51:53.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Delete.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Delete.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Categories\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T14:51:51.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T16:55:39.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T12:39:58.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\_ViewStart.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Demo\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T13:09:02.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\_ViewImports.cshtml",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Demo\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T13:09:02.258Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 42,
+              "Title": "Navbar.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Navbar.cs",
+              "RelativeDocumentMoniker": "Demo\\Models\\Navbar.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Navbar.cs",
+              "RelativeToolTip": "Demo\\Models\\Navbar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T14:03:02.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "favicon.ico - Icon [32x32, 32 bit, BMP]",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\favicon.ico",
+              "RelativeDocumentMoniker": "Demo\\wwwroot\\favicon.ico",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
+              "RelativeToolTip": "Demo\\wwwroot\\favicon.ico - Icon [32x32, 32 bit, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2024-07-02T15:43:13.637Z",
+              "EditorCaption": " - Icon [32x32, 32 bit, BMP]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "Demo\\Controllers\\RoomsController.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "Demo\\Controllers\\RoomsController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:22:03.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Demo\\Controllers\\CategoriesController.cs",
@@ -749,12 +762,11 @@
               "RelativeToolTip": "Demo\\Controllers\\CategoriesController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:21:15.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T11:21:15.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Demo\\Models\\ErrorViewModel.cs",
@@ -762,12 +774,11 @@
               "RelativeToolTip": "Demo\\Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:18:38.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T11:18:38.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "launchSettings.json",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Demo\\Properties\\launchSettings.json",
@@ -775,21 +786,7 @@
               "RelativeToolTip": "Demo\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-28T11:24:22.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Demo\\Models\\Customer.cs",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Customer.cs",
-              "RelativeToolTip": "Demo\\Models\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:16:10.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T11:24:22.637Z"
             }
           ]
         }

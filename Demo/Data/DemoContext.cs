@@ -21,5 +21,9 @@ namespace Demo.Data
         public DbSet<Demo.Models.Employee>? Employee { get; set; }
 
         public DbSet<Demo.Models.Customer>? Customer { get; set; }
+
+        public DbSet<Demo.Models.Booking>? Booking { get; set; }
+
+        public DbSet<Demo.Models.User>? User { get; set; }
     }
 }

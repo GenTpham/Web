@@ -1,0 +1,158 @@
+﻿@model IEnumerable<Demo.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Admin";
+}
+<style>
+    /* Đặt nền cho toàn bộ trang */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Tiêu đề chính */
+    h1 {
+        font-size: 2em;
+        color: #343a40;
+        margin-bottom: 20px;
+    }
+
+    /* Đường dẫn tạo mới */
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    /* Bảng */
+    .table {
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #212529;
+        border-collapse: collapse;
+    }
+
+        .table th,
+        .table td {
+            padding: 12px;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .table thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+            background-color: #e9ecef;
+        }
+
+        .table tbody + tbody {
+            border-top: 2px solid #dee2e6;
+        }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .table-hover tbody tr:hover {
+        color: #212529;
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+
+    /* Các nút chỉnh sửa, xem chi tiết, xóa */
+    a.asp-action {
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        padding: 5px 10px;
+        margin-right: 5px;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+        a.asp-action:hover {
+            background-color: #0056b3;
+        }
+
+        /* Liên kết bổ sung */
+        a.asp-action.edit {
+            background-color: #28a745;
+        }
+
+        a.asp-action.details {
+            background-color: #17a2b8;
+        }
+
+        a.asp-action.delete {
+            background-color: #dc3545;
+        }
+
+</style>
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

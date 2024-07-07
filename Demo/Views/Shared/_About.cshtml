@@ -1,235 +1,307 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@549&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Hotelier - Hotel HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
+    <!-- Favicon -->
+    <link href="/img/favicon.ico" rel="icon">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seaside Hotel</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="/css/About.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="col-md-12" style="background-size: cover;">
-            <!-- logo begin -->
-            <div id="logo" style="background-size: cover;">
-
-                <img class="logo" src="/img/logo.png" alt="Seaside Hotel Logo">
-                </a>
-            </div>
-            <!-- logo close -->
-            <!-- small button begin -->
-            <div id="mo-button-open">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <!-- small button close -->
-        </div>
-    </header>
-    <!-- Header kết thúc -->
-    <div class="wrapper">
-        <div class="menu-overlay" id="menuOverlay">
-            <!-- Nút đóng menu -->
-            <span class="close-btn" id="close-btn">&times;</span>
-
-            <div class="menu-content">
-                <!-- Logo -->
-                <img src="/img/logo.png" alt="Seaside Hotel Logo" style="max-width: 100px; margin-bottom: 30px;">
-                <!-- Các dòng chữ -->
-                <p><a asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a></p>
-                <p><a asp-area="" asp-controller="Rooms" asp-action="Index">Phòng</a></p>
-                <p><a asp-area="" asp-controller="Home" asp-action="Booking">Đặt phòng</a></p>
-                <p><a asp-area="" asp-controller="Home" asp-action="About">Giới thiệu</a></p>
-                <p><a asp-area="" asp-controller="Home" asp-action="Contact">Liên hệ</a></p>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
         </div>
-        <div id="slider">
-            <div class="slide-content">
-                <h2>We Are</h2>
-                <p>Seaside</p>
-            </div>
-        </div>
-        <div class="row align-items-center hidden">
-            <div class="col-md-4">
-                <div class="room-gallery1">
-                    <img src="\img\About\1 (1).jpg" alt="Room Image 1" class="room-img room-img-bottom">
+        <!-- Spinner End -->
+        <!-- Header Start -->
+        <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row gx-0 bg-white d-none d-lg-flex">
+                        <div class="col-lg-7 px-5 text-start">
+                            <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                                <i class="fa fa-envelope text-primary me-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="h-100 d-inline-flex align-items-center py-2">
+                                <i class="fa fa-phone-alt text-primary me-2"></i>
+                                <p class="mb-0">+012 345 6789</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 px-5 text-end">
+                            <div class="d-inline-flex align-items-center py-2">
+                                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="" href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    @await Component.InvokeAsync("Navbar");
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="room-gallery">
-                    <img src="\img\About\2.jpg" alt="Room Image 2" class="room-img">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="room-description">
-                    <h2 class="title">
-                        Trải Nghiệm Đẳng Cấp
-                        <br>
-                        Bạn Sẽ Nhớ Mãi
-                        <span class="small-border"></span>
-                    </h2>
-                    <p>Bước vào thế giới của sự xa hoa và tinh tế tại khách sạn danh tiếng của chúng tôi. Ngay từ khi bạn bước vào sảnh lớn, bạn sẽ được bao bọc trong bầu không khí sang trọng và yên bình. Cam kết về dịch vụ hoàn hảo và sự thoải mái vô song của chúng tôi đảm bảo rằng mọi khía cạnh trong kỳ nghỉ của bạn đều trở nên đặc biệt.</p>
-                    <a href="/detailrooms/detailrooms.html"><button>CHỌN PHÒNG NGAY</button></a>
-                </div>
-            </div>
-            <div class="container hidden">
-                <div class="title">Tiện Ích Sẵn Có<span class="underline"></span></div>
-                <div class="facilities-grid">
-                    <div class="facility">
-                        <div class="facility-header">
-                            <img src="\img\About\restaurant-svgrepo-com.svg" alt="Safe Box" class="icon" />
-                            <div class="name">Nhà Hàng</div>
-                        </div>
-                        <div class="description">Khám phá hành trình ẩm thực tại nhà hàng tinh tế của chúng tôi. Các đầu bếp chuyên nghiệp của chúng tôi tạo ra những món ăn ngon miệng từ những nguyên liệu tuyển chọn, mang đến trải nghiệm ẩm thực làm hài lòng các giác quan và thỏa mãn cả những vị khách sành ăn nhất. Từ những món ăn sáng tạo đến các món truyền thống yêu thích, mỗi bữa ăn đều là một lễ hội của hương vị và nghệ thuật ẩm thực.</div>
-                    </div>
-                    <div class="facility">
-                        <div class="facility-header">
-                            <img src="\img\About\gym.svg" alt="Safe Box" class="icon" />
-                            <div class="name">Khu Vực Rèn Luyện Sức Khỏe</div>
-                        </div>
-                        <div class="description">Duy trì thói quen luyện tập tại trung tâm thể dục hiện đại của chúng tôi. Được trang bị các máy tập tim mạch và rèn luyện sức mạnh mới nhất, phòng tập gym của chúng tôi mang đến môi trường hoàn hảo cho các bài tập sôi động. Dù bạn là người đam mê thể dục hay chỉ muốn duy trì hoạt động trong kỳ nghỉ, cơ sở vật chất của chúng tôi đáp ứng mọi nhu cầu tập luyện ở mọi cấp độ.</div>
-                    </div>
-                    <div class="facility">
-                        <div class="facility-header">
-                            <img src="\img\About\coffee-table-svgrepo-com.svg" alt="Safe Box" class="icon" />
-                            <div class="name">Quầy Bar</div>
-                        </div>
-                        <div class="description">Tận hưởng sự tiện lợi với mini bar được chuẩn bị chu đáo của chúng tôi. Cung cấp một bộ sưu tập đồ uống cao cấp và đồ ăn nhẹ thượng hạng được chọn lọc kỹ lưỡng, mini bar là lựa chọn hoàn hảo cho việc giải khát nhanh chóng hoặc thưởng thức đồ ăn khuya. Tận hưởng sự xa xỉ ngay trong tầm tay của bạn.</div>
-                    </div>
-                    <div class="facility">
-                        <div class="facility-header">
-                            <img src="\img\About\meeting-explain-svgrepo-com.svg" alt="Safe Box" class="icon" />
-                            <div class="name">Phòng Họp</div>
-                        </div>
-                        <div class="description">Tổ chức các cuộc họp kinh doanh thành công trong không gian họp tinh tế của chúng tôi. Được trang bị công nghệ tiên tiến và bố trí linh hoạt, các phòng họp của chúng tôi thích ứng với nhiều nhu cầu sự kiện khác nhau. Từ các buổi họp nhóm nhỏ đến hội nghị lớn, chúng tôi cung cấp môi trường lý tưởng cho các sự kiện doanh nghiệp hiệu quả và ấn tượng.</div>
-                    </div>
-                    <div class="facility">
-                        <div class="facility-header">
-                            <img src="\img\About\laundry-machine-svgrepo-com.svg" alt="Safe Box" class="icon" />
-                            <div class="name">Dịch Vụ Giặt Ủi</div>
-                        </div>
-                        <div class="description">Trải nghiệm sự tiện lợi của dịch vụ giặt ủi cao cấp. Đội ngũ nhân viên tận tâm của chúng tôi đảm bảo quần áo của bạn được chăm sóc chuyên nghiệp, trả lại cho bạn trong tình trạng tươi mới, phẳng phiu và sẵn sàng để mặc. Tận hưởng sự xa xỉ của quần áo sạch sẽ hoàn hảo mà không cần động tay, cho phép bạn tập trung vào việc tận hưởng kỳ nghỉ của mình.</div>
-                    </div>
-                    <div class="facility">
-                        <div class="facility-header">
-                            <img src="\img\About\screen-tv-svgrepo-com.svg" alt="Safe Box" class="icon" />
-                            <div class="name">TV</div>
-                        </div>
-                        <div class="description">Luôn kết nối và giải trí với các kênh truyền hình vệ tinh đa dạng của chúng tôi. Thưởng thức nhiều kênh quốc tế, tin tức mới nhất, các sự kiện thể thao và các bộ phim cao cấp. Màn hình độ phân giải cao và hệ thống âm thanh chất lượng đảm bảo trải nghiệm xem sống động ngay trong sự thoải mái của phòng bạn.</div>
-                    </div>
-                    <div class="facility">
-                        <div class="facility-header">
-                            <img src="\img\About\safebox-svgrepo-com.svg" alt="Safe Box" class="icon" />
-                            <div class="name">Két Sắt</div>
-                        </div>
-                        <div class="description">Đảm bảo an toàn cho tài sản quý giá của bạn với két sắt trong phòng. Với cơ chế khóa tiên tiến và không gian rộng rãi bên trong, két sắt của chúng tôi mang lại sự yên tâm khi lưu trữ các tài liệu quan trọng, trang sức và thiết bị điện tử. Hãy nghỉ ngơi thoải mái khi biết rằng tài sản của bạn được bảo vệ trong suốt thời gian lưu trú.</div>
-                    </div>
-                    <div class="facility">
-                        <div class="facility-header">
-                            <img src="\img\About\car-parking-svgrepo-com.svg" alt="Safe Box" class="icon" />
-                            <div class="name">Khu Vực Đỗ Xe</div>
-                        </div>
-                        <div class="description">Tận hưởng việc đỗ xe thuận tiện trong khu vực đỗ xe an toàn và rộng rãi của chúng tôi. Với hệ thống giám sát 24/7 và dễ dàng tiếp cận khách sạn, an toàn cho phương tiện của bạn được đảm bảo. Dịch vụ đỗ xe có người phục vụ cũng có sẵn để tăng thêm sự tiện lợi, cho phép bạn bước trực tiếp từ xe vào sảnh chào đón của chúng tôi.</div>
-                    </div>
-                    <div class="facility">
-                        <div class="facility-header">
-                            <img src="\img\About\swimming-pool-svgrepo-com.svg" alt="Safe Box" class="icon" />
-                            <div class="name">Hồ Bơi</div>
-                        </div>
-                        <div class="description">Đắm mình trong sự thư giãn tại hồ bơi tinh khiết của chúng tôi. Dù bạn muốn bơi lội hay chỉ đơn giản là thư giãn bên hồ bơi, khu vực hồ bơi được thiết kế đẹp mắt của chúng tôi mang đến một nơi nghỉ dưỡng sảng khoái. Được bao quanh bởi ghế tắm nắng thoải mái và cảnh quan xanh tươi, đây là nơi hoàn hảo để thư giãn và tận hưởng ánh nắng mặt trời.</div>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
-        <div id="social-links">
-            <a href="#" class="fab fa-facebook"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
+        <!-- Header End -->
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(/img/carousel-1.jpg);">
+            <div class="container-fluid page-header-inner py-5">
+                <div class="container text-center pb-5">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
         </div>
-        @RenderBody();
-        <footer class="site-footer">
-            <div class="footer-text">
-                
+        <!-- Page Header End -->
+        <!-- Booking Start -->
+        <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="bg-white shadow" style="padding: 35px;">
+                    <div class="row g-2">
+                        <div class="col-md-10">
+                            <div class="row g-2">
+                                <div class="col-md-3">
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input"
+                                               placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="date" id="date2" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option selected>Adult</option>
+                                        <option value="1">Adult 1</option>
+                                        <option value="2">Adult 2</option>
+                                        <option value="3">Adult 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option selected>Child</option>
+                                        <option value="1">Child 1</option>
+                                        <option value="2">Child 2</option>
+                                        <option value="3">Child 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary w-100">Submit</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!-- Booking End -->
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
+                        <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelier</span></h1>
+                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <div class="row g-3 pb-4">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                        <p class="mb-0">Rooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                        <p class="mb-0">Staffs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                        <p class="mb-0">Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="/img/about-1.jpg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="/img/about-2.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="/img/about-3.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="/img/about-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+        <!-- About End -->
+        <!-- Team Start -->
+        
+        <!-- Team End -->
+        <!-- Newsletter Start -->
+        <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 border rounded p-1">
+                    <div class="border rounded text-center p-1">
+                        <div class="bg-white rounded text-center p-5">
+                            <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
+                            <div class="position-relative mx-auto" style="max-width: 400px;">
+                                <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter Start -->
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-primary rounded p-4">
+                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">Hotelier</h1></a>
+                            <p class="text-white mb-0">
+                                Download <a class="text-dark fw-medium" href="https://htmlcodex.com/hotel-html-template-pro">Hotelier – Premium Version</a>, build a professional website for your hotel business and grab the attention of new visitors upon your site’s launch.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
+                                <a class="btn btn-link" href="">About Us</a>
+                                <a class="btn btn-link" href="">Contact Us</a>
+                                <a class="btn btn-link" href="">Privacy Policy</a>
+                                <a class="btn btn-link" href="">Terms & Condition</a>
+                                <a class="btn btn-link" href="">Support</a>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
+                                <a class="btn btn-link" href="">Food & Restaurant</a>
+                                <a class="btn btn-link" href="">Spa & Fitness</a>
+                                <a class="btn btn-link" href="">Sports & Gaming</a>
+                                <a class="btn btn-link" href="">Event & Party</a>
+                                <a class="btn btn-link" href="">GYM & Yoga</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
+    @RenderBody();
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/wow/wow.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/waypoints/waypoints.min.js"></script>
+    <script src="/lib/counterup/counterup.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
+    <!-- Template Javascript -->
+    <script src="/js/main.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
-
-
-
-<script>
-    function toggleMenu() {
-        var menu = document.getElementById("menuOverlay");
-        menu.style.display = menu.style.display === "block" ? "none" : "block";
-    }
-
-    // Gắn sự kiện click với nút hamburger
-    document.getElementById("mo-button-open").addEventListener("click", toggleMenu);
-
-    // JavaScript cho nút mở menu
-    document.getElementById('mo-button-open').addEventListener('click', function () {
-        var menuOverlay = document.getElementById('menuOverlay');
-        menuOverlay.classList.add('open');
-        menuOverlay.classList.remove('close');
-    });
-
-    document.getElementById('close-btn').addEventListener('click', function () {
-        var menuOverlay = document.getElementById('menuOverlay');
-        var menuContent = document.querySelector('.menu-content');
-        menuOverlay.classList.add('close');
-        setTimeout(function () {
-            menuOverlay.classList.remove('close');
-            menuOverlay.style.display = 'none';
-        }, 500); // Đợi cho đến khi animation kết thúc
-    });
-
-    // Đảm bảo rằng DOM đã sẵn sàng
-    document.addEventListener('DOMContentLoaded', function () {
-        // Lắng nghe sự kiện 'animationend' trên slider
-        var slider = document.querySelector('.slide-content'); // Thay thế '.slide-content' bằng selector phù hợp của slider
-        slider.addEventListener('animationend', function () {
-            // Khi hiệu ứng của slider kết thúc, thực hiện hiệu ứng slide up để hiển thị .container và .row.align-items-center
-            showElements('.container, .row.align-items-center');
-        });
-    });
-
-    function showElements(selector) {
-        // Lấy tất cả các phần tử cần áp dụng hiệu ứng
-        var elements = document.querySelectorAll(selector);
-        // Duyệt qua từng phần tử và áp dụng hiệu ứng
-        elements.forEach(function (element) {
-            // Loại bỏ class 'hidden' để hiển thị phần tử
-            element.classList.remove('hidden');
-            // Áp dụng animation slideUpToShow
-            element.style.animation = 'slideUpToShow 1.8s forwards';
-        });
-    }
-
-
-
-</script>
-    
 
 </html>

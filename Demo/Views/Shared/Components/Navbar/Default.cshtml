@@ -4,12 +4,34 @@
 @{
 }
 @model IEnumerable<Demo.Models.Category>
-<nav>
-    <ul class="nav_links">
-        <li><a asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
-        <li><a asp-area="" asp-controller="Rooms" asp-action="Index">Phòng</a></li>
-        <li><a asp-area="" asp-controller="Home" asp-action="Booking">Đặt phòng</a></li>
-        <li><a asp-area="" asp-controller="Home" asp-action="About">Giới thiệu</a></li>
-        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Liên hệ</a></li>
-    </ul>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+    <a href="index.html" class="navbar-brand d-block d-lg-none">
+        <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav mr-auto py-0">
+            <a class="nav-item nav-link" href="/Home/Index">Trang chủ</a>
+            <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="About">Giới thiệu</a>
+            <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Services">Dịch vụ</a>
+            <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Rooms">Phòng</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <div class="dropdown-menu rounded-0 m-0">
+                    <a asp-area="" asp-controller="Bookings" asp-action="Create" class="dropdown-item">Đặt phòng</a>
+                </div>
+            </div>
+            <a asp-area="" asp-controller="Home" asp-action="Contact" class="nav-item nav-link active">Liên hệ</a>
+            @if(User.Identity.IsAuthenticated && User.IsInRole("Administrator"))
+            {
+                <a class="nav-item nav-link" href="/Rooms/Create">Quản lý</a>
+            }
+
+            <a class="nav-item nav-link" href="/Users/Login">Đăng nhập</a>
+            <a class="nav-item nav-link" href="/Users/Logout">Thoát</a>
+        </div>
+
+    </div>
 </nav>

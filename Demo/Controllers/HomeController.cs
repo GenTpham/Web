@@ -31,6 +31,14 @@ namespace Demo.Controllers
         {
             return View();
         }
+        public IActionResult Services()
+        {
+            return View();
+        }
+        public IActionResult Rooms()
+        {
+            return View(_context.Room.ToList());
+        }
         public IActionResult Privacy()
         {
             return View();

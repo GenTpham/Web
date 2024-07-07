@@ -1,39 +1,167 @@
 ﻿@model IEnumerable<Demo.Models.Room>
+
 @{
-    ViewData["Title"] = "RoomList";
-    Layout = "_Rooms";
+    ViewData["Title"] = "Index";
+    Layout = "_Admin";
 }
-<div class="container hidden">
-    <div class="row">
+<style>
+    /* Đặt nền cho toàn bộ trang */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Tiêu đề chính */
+    h1 {
+        font-size: 2em;
+        color: #343a40;
+        margin-bottom: 20px;
+    }
+
+    /* Đường dẫn tạo mới */
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    /* Bảng */
+    .table {
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #212529;
+        border-collapse: collapse;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .table th,
+        .table td {
+            padding: 12px;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .table thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+            background-color: #e9ecef;
+            text-align: left;
+        }
+
+        .table tbody + tbody {
+            border-top: 2px solid #dee2e6;
+        }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .table-hover tbody tr:hover {
+        color: #212529;
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+
+    /* Các nút chỉnh sửa, xem chi tiết, xóa */
+    a.asp-action {
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        padding: 5px 10px;
+        margin-right: 5px;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+        a.asp-action:hover {
+            background-color: #0056b3;
+        }
+
+        /* Liên kết bổ sung */
+        a.asp-action.edit {
+            background-color: #28a745;
+        }
+
+        a.asp-action.details {
+            background-color: #17a2b8;
+        }
+
+        a.asp-action.delete {
+            background-color: #dc3545;
+        }
+
+</style>
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.category)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
         @foreach (var item in Model)
         {
-            <div class="col-lg-6">
-                <div class="big-box">
-                <div class="content">
-                    <div class="image">
-                        <img src="@item.ImageUrl" alt="Standard Room">
-                        <img class="hover-image" src="/Room/Images/1-alt.jpg" alt="Standard Room Hover">
-                        <div class="label">@item.Status</div>
-                    </div>
-                    <div class="text-content">
-                        <div class="room-info">
-                            <span><i class="fas fa-user"></i> 2 Khách</span>
-                            <span><i class="fas fa-expand"></i> 15m&sup2;</span>
-                        </div>
-                        <div class="room-details">
-                            <h3>@item.RoomType</h3>
-                            <p>@item.Description</p>
-                            <a href="/detailrooms/detailrooms.html" class="submit-form">Đặt phòng ngay chỉ với @item.Price VND</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-        </div>
-
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoomType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoomNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImageUrl)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.category)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
         }
-    </div>
-    
-</div>
+    </tbody>
+</table>

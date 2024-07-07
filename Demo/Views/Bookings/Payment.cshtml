@@ -1,0 +1,150 @@
+﻿@model Demo.Models.Booking
+
+@{
+    ViewData["Title"] = "Payment";
+    Layout = "_Test"; // Thay đổi tên layout nếu cần thiết
+}
+
+<!-- CSS Styles -->
+<style>
+    /* Định dạng nội dung chính */
+    .container {
+        margin-top: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+        font-size: 36px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    hr {
+        border-top: 1px solid #ccc;
+        margin: 20px 0;
+    }
+
+    /* Chi tiết đặt phòng */
+    .booking-details {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .booking-details dl dt {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .booking-details dl dd {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+
+    /* Form thanh toán */
+    .payment-form {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+        .payment-form .form-group {
+            margin-bottom: 25px;
+        }
+
+        .payment-form label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .payment-form input[type="text"],
+        .payment-form input[type="password"],
+        .payment-form input[type="email"],
+        .payment-form textarea,
+        .payment-form select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .payment-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .payment-form button:hover {
+                background-color: #0056b3;
+            }
+</style>
+
+<div class="container">
+    <h2>Payment Details</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="booking-details">
+                <dl class="row">
+                    <dt class="col-sm-4">Name:</dt>
+                    <dd class="col-sm-8">@Model.Name</dd>
+
+                    <dt class="col-sm-4">Email:</dt>
+                    <dd class="col-sm-8">@Model.Email</dd>
+
+                    <dt class="col-sm-4">Phone:</dt>
+                    <dd class="col-sm-8">@Model.Phone</dd>
+
+                    <dt class="col-sm-4">Check In Date:</dt>
+                    <dd class="col-sm-8">@Model.CheckInDate.ToString("dd/MM/yyyy")</dd>
+
+                    <dt class="col-sm-4">Check Out Date:</dt>
+                    <dd class="col-sm-8">@Model.CheckOutDate.ToString("dd/MM/yyyy")</dd>
+
+                    <dt class="col-sm-4">Room Type:</dt>
+                    <div class="form-floating">
+                        <select asp-for="RoomId" class="form-select" asp-items="@((SelectList)ViewData["RoomId"])"></select>
+                        <span asp-validation-for="RoomId" class="text-danger"></span>
+                    </div>
+
+                    <dt class="col-sm-4">Special Request:</dt>
+                    <dd class="col-sm-8">@Model.Request</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="payment-form">
+                <h4>Payment Form</h4>
+                <form method="post" action="/Bookings/ProcessPayment">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" class="form-control" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv" name="cvv" placeholder="CVV" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Pay Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

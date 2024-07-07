@@ -1,0 +1,173 @@
+﻿@model Demo.Models.Booking
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "_Admin";
+}
+<style>
+    /* Đặt nền cho toàn bộ trang */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Tiêu đề chính */
+    h1 {
+        font-size: 2.5em;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    /* Tiêu đề phụ */
+    h4 {
+        font-size: 1.8em;
+        color: #ffffff;
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 2px #000000;
+        text-align: center;
+    }
+
+    /* Đường phân cách */
+    hr {
+        border-top: 1px solid #ffffff;
+        margin-bottom: 20px;
+    }
+
+    /* Bố cục hàng và cột */
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .col-md-4 {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Các nhãn và đầu vào */
+    .control-label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .text-danger {
+        color: #dc3545;
+    }
+
+    /* Nút lưu */
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 1em;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+
+    /* Liên kết trở về danh sách */
+    div a {
+        color: #ff7e5f;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+        div a:hover {
+            text-decoration: underline;
+        }
+
+</style>
+<h1>Edit</h1>
+
+<h4>Booking</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CheckInDate" class="control-label"></label>
+                <input asp-for="CheckInDate" class="form-control" />
+                <span asp-validation-for="CheckInDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CheckOutDate" class="control-label"></label>
+                <input asp-for="CheckOutDate" class="form-control" />
+                <span asp-validation-for="CheckOutDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Adult" class="control-label"></label>
+                <input asp-for="Adult" class="form-control" />
+                <span asp-validation-for="Adult" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Child" class="control-label"></label>
+                <input asp-for="Child" class="form-control" />
+                <span asp-validation-for="Child" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Request" class="control-label"></label>
+                <input asp-for="Request" class="form-control" />
+                <span asp-validation-for="Request" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RoomId" class="control-label"></label>
+                <select asp-for="RoomId" class="form-control" asp-items="ViewBag.RoomId"></select>
+                <span asp-validation-for="RoomId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

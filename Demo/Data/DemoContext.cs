@@ -25,5 +25,11 @@ namespace Demo.Data
         public DbSet<Demo.Models.Booking>? Booking { get; set; }
 
         public DbSet<Demo.Models.User>? User { get; set; }
+
+        public DbSet<Demo.Models.RevenueReport>? RevenueReport { get; set; }
+
+        public DbSet<Demo.Models.Service>? Service { get; set; }
+
+        public DbSet<Demo.Models.BookingService>? BookingService { get; set; }
     }
 }

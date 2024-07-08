@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "E:\\New folder (3)\\Demo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\controllers\\revenuereportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\controllers\\revenuereportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\revenuereport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\revenuereport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|solutionrelative:demo\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EF010A3-9B84-47D8-9F5D-41109463E77F}|Demo\\Demo.csproj|e:\\new folder (3)\\demo\\demo\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -207,32 +215,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RevenueReportsController.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\RevenueReportsController.cs",
+              "RelativeDocumentMoniker": "Demo\\Controllers\\RevenueReportsController.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\RevenueReportsController.cs",
+              "RelativeToolTip": "Demo\\Controllers\\RevenueReportsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T06:36:02.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RevenueReport.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\RevenueReport.cs",
+              "RelativeDocumentMoniker": "Demo\\Models\\RevenueReport.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\RevenueReport.cs",
+              "RelativeToolTip": "Demo\\Models\\RevenueReport.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T06:33:22.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UsersController.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Demo\\Controllers\\UsersController.cs",
               "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Demo\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-07T12:29:18.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Demo\\Models\\User.cs",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\User.cs",
-              "RelativeToolTip": "Demo\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T12:25:53.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Program.cs",
               "RelativeDocumentMoniker": "Demo\\Program.cs",
@@ -240,12 +261,11 @@
               "RelativeToolTip": "Demo\\Program.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T12:20:34.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T12:20:34.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "Demo\\Controllers\\EmployeesController.cs",
@@ -253,12 +273,11 @@
               "RelativeToolTip": "Demo\\Controllers\\EmployeesController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:22:33.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T11:22:33.713Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Employee.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Demo\\Models\\Employee.cs",
@@ -266,12 +285,11 @@
               "RelativeToolTip": "Demo\\Models\\Employee.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:16:00.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T11:16:00.457Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Customer.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Demo\\Models\\Customer.cs",
@@ -279,12 +297,11 @@
               "RelativeToolTip": "Demo\\Models\\Customer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:16:10.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T11:16:10.422Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Demo\\Controllers\\HomeController.cs",
@@ -292,12 +309,36 @@
               "RelativeToolTip": "Demo\\Controllers\\HomeController.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAAACIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T14:57:34.699Z",
+              "WhenOpened": "2024-07-02T14:57:34.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Room.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Demo\\Models\\Room.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Room.cs",
+              "RelativeToolTip": "Demo\\Models\\Room.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:13:49.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Demo\\Models\\User.cs",
+              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\User.cs",
+              "RelativeToolTip": "Demo\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T12:25:53.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Booking.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Booking.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Home\\Booking.cshtml",
@@ -305,24 +346,11 @@
               "RelativeToolTip": "Demo\\Views\\Home\\Booking.cshtml",
               "ViewState": "AQIAAFIAAAAAAAAAAAAAAAkAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T18:04:25.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T18:04:25.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Room.cs",
-              "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Room.cs",
-              "RelativeDocumentMoniker": "Demo\\Models\\Room.cs",
-              "ToolTip": "E:\\New folder (3)\\Demo\\Demo\\Models\\Room.cs",
-              "RelativeToolTip": "Demo\\Models\\Room.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAkAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T11:13:49.845Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Category.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Demo\\Models\\Category.cs",
@@ -334,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "_About.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_About.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_About.cshtml",
@@ -346,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "_Booking.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Booking.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Booking.cshtml",
@@ -358,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Booking.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "Demo\\Models\\Booking.cs",
@@ -370,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "BookingsController.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\BookingsController.cs",
               "RelativeDocumentMoniker": "Demo\\Controllers\\BookingsController.cs",
@@ -382,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Create.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Bookings\\Create.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Bookings\\Create.cshtml",
@@ -394,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Create.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Create.cshtml",
@@ -406,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "_Contact.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Contact.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Contact.cshtml",
@@ -418,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Home\\Privacy.cshtml",
@@ -430,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Home\\Contact.cshtml",
@@ -442,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "_Services.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Services.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Services.cshtml",
@@ -454,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Layout.cshtml",
@@ -466,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Index.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Index.cshtml",
@@ -478,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Edit.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Edit.cshtml",
@@ -490,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Home\\Index.cshtml",
@@ -502,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Delete.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Delete.cshtml",
@@ -514,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "style.css",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "Demo\\wwwroot\\css\\style.css",
@@ -526,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Services.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\Services.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Home\\Services.cshtml",
@@ -538,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "bootstrap.min.css",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\css\\bootstrap.min.css",
               "RelativeDocumentMoniker": "Demo\\wwwroot\\css\\bootstrap.min.css",
@@ -550,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "_Rooms.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_Rooms.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_Rooms.cshtml",
@@ -562,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Default.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\Components\\Navbar\\Default.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Shared\\Components\\Navbar\\Default.cshtml",
@@ -574,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "About.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Home\\About.cshtml",
@@ -586,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Employees\\Index.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Employees\\Index.cshtml",
@@ -598,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Create.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Create.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Create.cshtml",
@@ -610,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Index.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Index.cshtml",
@@ -622,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Details.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Rooms\\Details.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Rooms\\Details.cshtml",
@@ -634,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Edit.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Edit.cshtml",
@@ -646,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "Details.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Details.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Details.cshtml",
@@ -658,7 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Categories\\Delete.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Categories\\Delete.cshtml",
@@ -670,7 +698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "Error.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Shared\\Error.cshtml",
@@ -682,7 +710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -694,7 +722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\_ViewStart.cshtml",
@@ -706,7 +734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\_ViewImports.cshtml",
@@ -718,7 +746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "Navbar.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\Navbar.cs",
               "RelativeDocumentMoniker": "Demo\\Models\\Navbar.cs",
@@ -730,7 +758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "favicon.ico - Icon [32x32, 32 bit, BMP]",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\favicon.ico",
               "RelativeDocumentMoniker": "Demo\\wwwroot\\favicon.ico",
@@ -742,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "RoomsController.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\RoomsController.cs",
               "RelativeDocumentMoniker": "Demo\\Controllers\\RoomsController.cs",
@@ -754,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Demo\\Controllers\\CategoriesController.cs",
@@ -766,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Demo\\Models\\ErrorViewModel.cs",
@@ -778,7 +806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "launchSettings.json",
               "DocumentMoniker": "E:\\New folder (3)\\Demo\\Demo\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Demo\\Properties\\launchSettings.json",

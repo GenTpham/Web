@@ -33,7 +33,7 @@ namespace Demo.Controllers
         }
         public IActionResult Services()
         {
-            return View();
+            return View(_context.Service.ToList());
         }
         public IActionResult Rooms()
         {

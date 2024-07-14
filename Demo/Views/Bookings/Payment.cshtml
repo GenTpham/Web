@@ -2,149 +2,178 @@
 
 @{
     ViewData["Title"] = "Payment";
-    Layout = "_Test"; // Thay đổi tên layout nếu cần thiết
+    Layout = "_Test";
 }
 
-<!-- CSS Styles -->
 <style>
-    /* Định dạng nội dung chính */
-    .container {
-        margin-top: 50px;
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2ecc71;
+        --background-color: #f9f9f9;
+        --text-color: #333;
+        --border-color: #ddd;
+    }
+
+    body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
     }
 
     h2 {
-        font-size: 36px;
-        color: #333;
+        color: var(--primary-color);
         text-align: center;
         margin-bottom: 30px;
+        font-size: 2.5em;
+        font-weight: 300;
     }
 
-    hr {
-        border-top: 1px solid #ccc;
-        margin: 20px 0;
-    }
-
-    /* Chi tiết đặt phòng */
-    .booking-details {
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        padding: 20px;
-        margin-bottom: 30px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-        .booking-details dl dt {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .booking-details dl dd {
-            margin-left: 0;
-            margin-bottom: 10px;
-        }
-
-    /* Form thanh toán */
-    .payment-form {
+    .card {
         background-color: #fff;
-        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 30px;
-        border-radius: 5px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
     }
 
-        .payment-form .form-group {
-            margin-bottom: 25px;
+        .card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        .payment-form label {
+    .booking-details {
+        margin-bottom: 30px;
+    }
+
+        .booking-details h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: 400;
+        }
+
+        .booking-details dl {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+        }
+
+        .booking-details dt {
             font-weight: bold;
-            color: #555;
+            color: var(--primary-color);
         }
 
-        .payment-form input[type="text"],
-        .payment-form input[type="password"],
-        .payment-form input[type="email"],
-        .payment-form textarea,
-        .payment-form select {
-            width: 100%;
+        .booking-details dd {
+            margin-left: 0;
+        }
+
+    .qr-code {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+        .qr-code img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
             padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
         }
 
-        .payment-form button {
-            background-color: #007bff;
-            color: #fff;
+    .pay-now-button {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+        .pay-now-button button {
+            background-color: var(--secondary-color);
+            color: white;
             border: none;
             padding: 12px 20px;
             font-size: 18px;
-            border-radius: 5px;
+            border-radius: 4px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            width: 100%;
         }
 
-            .payment-form button:hover {
-                background-color: #0056b3;
+            .pay-now-button button:hover {
+                background-color: #27ae60;
             }
 </style>
 
 <div class="container">
     <h2>Payment Details</h2>
-    <hr />
 
     <div class="row">
         <div class="col-md-6">
-            <div class="booking-details">
-                <dl class="row">
-                    <dt class="col-sm-4">Name:</dt>
-                    <dd class="col-sm-8">@Model.Name</dd>
+            <div class="card booking-details">
+                <h3>Booking Information</h3>
+                <dl>
+                    <dt>Name:</dt>
+                    <dd>@Model.Name</dd>
 
-                    <dt class="col-sm-4">Email:</dt>
-                    <dd class="col-sm-8">@Model.Email</dd>
+                    <dt>Email:</dt>
+                    <dd>@Model.Email</dd>
 
-                    <dt class="col-sm-4">Phone:</dt>
-                    <dd class="col-sm-8">@Model.Phone</dd>
+                    <dt>Phone:</dt>
+                    <dd>@Model.Phone</dd>
 
-                    <dt class="col-sm-4">Check In Date:</dt>
-                    <dd class="col-sm-8">@Model.CheckInDate.ToString("dd/MM/yyyy")</dd>
+                    <dt>Check In Date:</dt>
+                    <dd>@Model.CheckInDate.ToString("dd/MM/yyyy")</dd>
 
-                    <dt class="col-sm-4">Check Out Date:</dt>
-                    <dd class="col-sm-8">@Model.CheckOutDate.ToString("dd/MM/yyyy")</dd>
+                    <dt>Check Out Date:</dt>
+                    <dd>@Model.CheckOutDate.ToString("dd/MM/yyyy")</dd>
 
-                    <dt class="col-sm-4">Room Type:</dt>
-                    <div class="form-floating">
-                        <select asp-for="RoomId" class="form-select" asp-items="@((SelectList)ViewData["RoomId"])"></select>
-                        <span asp-validation-for="RoomId" class="text-danger"></span>
-                    </div>
+                    <dt>Room Type:</dt>
+                    <dd>@Model.room.RoomType</dd>
 
-                    <dt class="col-sm-4">Special Request:</dt>
-                    <dd class="col-sm-8">@Model.Request</dd>
+                    <dt>Room Number:</dt>
+                    <dd>@Model.room.RoomNumber</dd>
+
+                    <dt>Price per Night:</dt>
+                    <dd><span id="pricePerNight">@Model.room.Price.ToString("F2")</span>VND</dd>
+
+                    <dt>Total Nights:</dt>
+                    <dd><span id="totalNights"></span></dd>
+
+                    <dt>Total Price:</dt>
+                    <dd><span id="totalPrice"></span>VND</dd>
                 </dl>
             </div>
         </div>
 
         <div class="col-md-6">
-            <div class="payment-form">
-                <h4>Payment Form</h4>
-                <form method="post" action="/Bookings/ProcessPayment">
-                    <div class="form-group">
-                        <label for="cardNumber">Card Number</label>
-                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="expiryDate">Expiry Date</label>
-                        <input type="text" class="form-control" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cvv">CVV</label>
-                        <input type="text" class="form-control" id="cvv" name="cvv" placeholder="CVV" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Pay Now</button>
-                </form>
+            <div class="card qr-code">
+                <h3>Scan to Pay</h3>
+                <img src="/img/450506684_1003239574730517_7267583256246432550_n.jpg" alt="QR Code for Payment" width="300">
+                <div class="pay-now-button">
+                    <button onclick="window.location.href='/Bookings/ThankYou'">Pay Now</button>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    var roomPrice = @Model.room.Price;
+    var checkInDate = new Date('@Model.CheckInDate.ToString("yyyy-MM-dd")');
+    var checkOutDate = new Date('@Model.CheckOutDate.ToString("yyyy-MM-dd")');
+
+    function calculatePrice() {
+        var totalNights = (checkOutDate - checkInDate) / (1000 * 60 * 60 * 24);
+        var totalPrice = roomPrice * totalNights;
+
+        document.getElementById('totalNights').textContent = totalNights;
+        document.getElementById('totalPrice').textContent = totalPrice.toFixed(2);
+    }
+
+    calculatePrice();
+</script>

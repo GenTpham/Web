@@ -39,6 +39,10 @@ namespace Demo.Controllers
         {
             return View(_context.Room.ToList());
         }
+        public IActionResult BookingList()
+        {
+            return View(_context.Booking.ToList());
+        }
         public IActionResult Privacy()
         {
             return View();

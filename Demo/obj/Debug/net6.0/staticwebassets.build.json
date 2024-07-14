@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SWGTCjk/YwFofMoCM7WOt+fc8l9HjZ6FFdSiqotVrt4=",
+  "Hash": "QJ6I4lGBiNQFI2RPrqWnjEZW3YWYDhFFqIwyfZnNws4=",
   "Source": "Demo",
   "BasePath": "_content/Demo",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\450506684_1003239574730517_7267583256246432550_n.jpg",
+      "SourceId": "Demo",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\",
+      "BasePath": "_content/Demo",
+      "RelativePath": "img/450506684_1003239574730517_7267583256246432550_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\450506684_1003239574730517_7267583256246432550_n.jpg"
     },
     {
       "Identity": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\About\\1 (1).jpg",

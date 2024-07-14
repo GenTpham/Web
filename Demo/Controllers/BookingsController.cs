@@ -47,28 +47,32 @@ namespace Demo.Controllers
 
         public async Task<IActionResult> Payment()
         {
-            // Lấy ID đặt phòng từ TempData
             if (!TempData.ContainsKey("BookingId"))
             {
-                // Nếu không có thông tin đặt phòng, chuyển hướng về trang chính
                 return RedirectToAction("Index", "Home");
             }
 
             int bookingId = (int)TempData["BookingId"];
-
-            // Lấy thông tin đặt phòng từ cơ sở dữ liệu
-            var bookingInfo = await _context.Booking.FindAsync(bookingId);
+            var bookingInfo = await _context.Booking
+                .Include(b => b.room)  // Đảm bảo rằng thông tin phòng được include
+                .FirstOrDefaultAsync(b => b.Id == bookingId);
 
             if (bookingInfo == null)
             {
-                // Nếu không tìm thấy đặt phòng, xử lý lỗi hoặc chuyển hướng về trang chính
                 return RedirectToAction("Index", "Home");
             }
 
-            // Lấy danh sách các loại phòng từ cơ sở dữ liệu
-            ViewData["RoomId"] = new SelectList(_context.Room, "Id", "RoomType");
+            // Lấy danh sách các loại phòng và giá
+            var rooms = await _context.Room.Select(r => new
+            {
+                r.Id,
+                r.RoomType,
+                r.Price
+            }).ToListAsync();
 
-            // Trả về view thanh toán với thông tin đặt phòng
+            ViewData["Rooms"] = new SelectList(rooms, "Id", "RoomType", bookingInfo.RoomId);
+            ViewData["RoomPrices"] = rooms.ToDictionary(r => r.Id, r => r.Price);
+
             return View(bookingInfo);
         }
         [HttpPost]
@@ -91,7 +95,35 @@ namespace Demo.Controllers
             var demoContext = _context.Booking.Include(b => b.room);
             return View(await demoContext.ToListAsync());
         }
+        public async Task<IActionResult> Admin_Index()
+        {
+            var demoContext = _context.Booking.Include(b => b.room);
+            return View(await demoContext.ToListAsync());
+        }
+        public async Task<IActionResult> BookingList()
+        {
+            var demoContext = _context.Booking.Include(b => b.room);
+            return View(await demoContext.ToListAsync());
+        }
         public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.Booking == null)
+            {
+                return NotFound();
+            }
+
+            var booking = await _context.Booking
+                .Include(b => b.room)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (booking == null)
+            {
+                return NotFound();
+            }
+
+            return View(booking);
+        }
+        //Details Khach hang
+        public async Task<IActionResult> Details1(int? id)
         {
             if (id == null || _context.Booking == null)
             {
@@ -160,6 +192,58 @@ namespace Demo.Controllers
             ViewData["RoomId"] = new SelectList(_context.Room, "Id", "Id", booking.RoomId);
             return View(booking);
         }
+        //Edit1
+        public async Task<IActionResult> Edit1(int? id)
+        {
+            if (id == null || _context.Booking == null)
+            {
+                return NotFound();
+            }
+
+            var booking = await _context.Booking.FindAsync(id);
+            if (booking == null)
+            {
+                return NotFound();
+            }
+            ViewData["RoomId"] = new SelectList(_context.Room, "Id", "RoomType", booking.RoomId);
+            return View(booking);
+        }
+
+        // POST: Bookings/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit1(int id, [Bind("Id,Name,Email,Phone,CheckInDate,CheckOutDate,Adult,Child,Request,RoomId")] Booking booking)
+        {
+            if (id != booking.Id)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(booking);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!BookingExists(booking.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(BookingList));
+            }
+            ViewData["RoomId"] = new SelectList(_context.Room, "Id", "RoomType", booking.RoomId);
+            return View(booking);
+        }
+
 
         // GET: Bookings/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -194,7 +278,7 @@ namespace Demo.Controllers
             {
                 _context.Booking.Remove(booking);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -202,5 +286,47 @@ namespace Demo.Controllers
         {
             return _context.Booking.Any(e => e.Id == id);
         }
+
+        //Hủy phòng
+        // GET: Bookings/Cancel/5
+        public async Task<IActionResult> Cancel(int? id)
+        {
+            if (id == null || _context.Booking == null)
+            {
+                return NotFound();
+            }
+
+            var booking = await _context.Booking
+                .Include(b => b.room)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (booking == null)
+            {
+                return NotFound();
+            }
+
+            return View(booking);
+        }
+
+        // POST: Bookings/Cancel/5
+        [HttpPost, ActionName("Cancel")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CancelConfirmed(int id)
+        {
+            if (_context.Booking == null)
+            {
+                return Problem("Entity set 'DemoContext.Booking' is null.");
+            }
+            var booking = await _context.Booking.FindAsync(id);
+            if (booking != null)
+            {
+                _context.Booking.Remove(booking);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(BookingList));
+        }
+
+
+
     }
 }

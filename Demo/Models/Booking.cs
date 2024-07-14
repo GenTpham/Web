@@ -19,5 +19,6 @@ namespace Demo.Models
         public int RoomId { get; set; }
         public virtual Room? room { get; set; }
 
+
     }
 }

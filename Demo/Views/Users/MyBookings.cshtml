@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Demo.Models.Booking>
+
+@{
+    ViewData["Title"] = "Đặt phòng của tôi";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Phòng</th>
+                <th>Ngày nhận phòng</th>
+                <th>Ngày trả phòng</th>
+                <th>Trạng thái</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.room.RoomType</td>
+                    <td>@item.CheckInDate.ToShortDateString()</td>
+                    <td>@item.CheckOutDate.ToShortDateString()</td>
+                    <td>@(item.IsCheckedOut ? "Đã trả phòng" : "Đang đặt")</td>
+                    <td>
+                        <a asp-controller="Bookings" asp-action="Details" asp-route-id="@item.Id">Chi tiết</a>
+                        @if (!item.IsCheckedOut)
+                        {
+                            <a asp-controller="Bookings" asp-action="Edit" asp-route-id="@item.Id">Chỉnh sửa</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Bạn chưa có đặt phòng nào.</p>
+}

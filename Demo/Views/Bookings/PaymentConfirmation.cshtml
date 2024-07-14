@@ -6,14 +6,17 @@
 @model Demo.Models.Booking
 
 @{
-    ViewData["Title"] = "Cancel Booking";
+    ViewData["Title"] = "Payment Confirmation";
 }
 
-<h1>Cancel Booking</h1>
+<h2>Payment Confirmation</h2>
 
-<h3>Are you sure you want to cancel this booking?</h3>
+<div class="alert alert-success" role="alert">
+    Your payment has been processed successfully!
+</div>
+
 <div>
-    <h4>Booking</h4>
+    <h4>Booking Details</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -21,18 +24,6 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Phone)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Phone)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.CheckInDate)
@@ -47,16 +38,14 @@
             @Html.DisplayFor(model => model.CheckOutDate)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.room.RoomType)
+            Room Type
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.room.RoomType)
         </dd>
     </dl>
+</div>
 
-    <form asp-action="Cancel">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Cancel Booking" class="btn btn-danger" /> |
-        <a asp-action="BookingList" class="btn btn-secondary">Back to List</a>
-    </form>
+<div>
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
 </div>

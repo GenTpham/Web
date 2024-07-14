@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<Demo.Models.Booking>
+
+@{
+    ViewData["Title"] = "User Bookings";
+}
+
+<h1>User Bookings</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Room</th>
+            <th>Check-In Date</th>
+            <th>Check-Out Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@booking.room.RoomType</td>
+                <td>@booking.CheckInDate.ToShortDateString()</td>
+                <td>@booking.CheckOutDate.ToShortDateString()</td>
+                <td>@(booking.IsCheckedOut ? "Checked Out" : "Active")</td>
+                <td>
+                    <a asp-controller="Bookings" asp-action="Details" asp-route-id="@booking.Id">Details</a> |
+                    <a asp-controller="Bookings" asp-action="Edit" asp-route-id="@booking.Id">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

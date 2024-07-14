@@ -33,5 +33,7 @@ namespace Demo.Data
         public DbSet<Demo.Models.BookingService>? BookingService { get; set; }
 
         public DbSet<Demo.Models.FinancialReport>? FinancialReport { get; set; }
+
+        public DbSet<Demo.Models.Promotion>? Promotion { get; set; }
     }
 }

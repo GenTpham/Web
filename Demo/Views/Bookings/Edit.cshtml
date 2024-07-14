@@ -2,107 +2,8 @@
 
 @{
     ViewData["Title"] = "Edit";
-    Layout = "_Admin";
 }
-<style>
-    /* Đặt nền cho toàn bộ trang */
-    body {
-        font-family: 'Roboto', sans-serif;
-        background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-        color: #333;
-        margin: 0;
-        padding: 20px;
-    }
 
-    /* Tiêu đề chính */
-    h1 {
-        font-size: 2.5em;
-        color: #ffffff;
-        text-align: center;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 4px #000000;
-    }
-
-    /* Tiêu đề phụ */
-    h4 {
-        font-size: 1.8em;
-        color: #ffffff;
-        margin-bottom: 10px;
-        text-shadow: 1px 1px 2px #000000;
-        text-align: center;
-    }
-
-    /* Đường phân cách */
-    hr {
-        border-top: 1px solid #ffffff;
-        margin-bottom: 20px;
-    }
-
-    /* Bố cục hàng và cột */
-    .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    .col-md-4 {
-        background: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Các nhãn và đầu vào */
-    .control-label {
-        font-weight: bold;
-        color: #333;
-    }
-
-    .form-control {
-        width: 100%;
-        padding: 8px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    .text-danger {
-        color: #dc3545;
-    }
-
-    /* Nút lưu */
-    .btn-primary {
-        background-color: #007bff;
-        border-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 4px;
-        font-size: 1em;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-        .btn-primary:hover {
-            background-color: #0056b3;
-            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
-        }
-
-    /* Liên kết trở về danh sách */
-    div a {
-        color: #ff7e5f;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        margin-top: 20px;
-    }
-
-        div a:hover {
-            text-decoration: underline;
-        }
-
-</style>
 <h1>Edit</h1>
 
 <h4>Booking</h4>
@@ -153,9 +54,34 @@
                 <span asp-validation-for="Request" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="PromotionCode" class="control-label"></label>
+                <input asp-for="PromotionCode" class="form-control" />
+                <span asp-validation-for="PromotionCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="RoomId" class="control-label"></label>
                 <select asp-for="RoomId" class="form-control" asp-items="ViewBag.RoomId"></select>
                 <span asp-validation-for="RoomId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsCheckedOut" /> @Html.DisplayNameFor(model => model.IsCheckedOut)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="ActualCheckOutDate" class="control-label"></label>
+                <input asp-for="ActualCheckOutDate" class="form-control" />
+                <span asp-validation-for="ActualCheckOutDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PromotionId" class="control-label"></label>
+                <select asp-for="PromotionId" class="form-control" asp-items="ViewBag.PromotionId"></select>
+                <span asp-validation-for="PromotionId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

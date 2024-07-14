@@ -7,9 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Demo.Data;
 using Demo.Models;
-using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
+using System.Text;
+using System.Security.Cryptography;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Demo.Controllers
 {
@@ -47,38 +51,6 @@ namespace Demo.Controllers
 
             return View(user);
         }
-        public IActionResult Login()
-        {
-            return View();
-        }
-        public IActionResult Logout()
-        {
-            HttpContext.SignOutAsync();
-            return View("Login");
-        }
-        [HttpPost]
-        public IActionResult Login(string name, string password)
-        {
-            var user = _context.User
-                   .FirstOrDefault(u => u.Name == name && u.Password == password);
-
-            if (user == null || _context.User == null)
-            {
-                return View();
-            }
-            var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, user.Name),
-                new Claim(ClaimTypes.Role, user.Role),
-            };
-            var claimsIdentity = new ClaimsIdentity(
-            claims, CookieAuthenticationDefaults.AuthenticationScheme);
-            HttpContext.SignInAsync(
-            CookieAuthenticationDefaults.AuthenticationScheme,
-            new ClaimsPrincipal(claimsIdentity));
-            return RedirectToAction("Index","Home");
-        }
-
 
         // GET: Users/Create
         public IActionResult Create()
@@ -194,5 +166,136 @@ namespace Demo.Controllers
         {
           return (_context.User?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+        // GET: Users/Register
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        // POST: Users/Register
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register([Bind("Name,Email,Phone,Address,Password,Role")] User user)
+        {
+            if (ModelState.IsValid)
+            {
+                // Kiểm tra xem email đã tồn tại chưa
+                if (await _context.User.AnyAsync(u => u.Email == user.Email))
+                {
+                    ModelState.AddModelError("Email", "Email này đã được sử dụng.");
+                    return View(user);
+                }
+
+                // Mã hóa mật khẩu
+                user.Password = HashPassword(user.Password);
+
+                _context.Add(user);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Login));
+            }
+            return View(user);
+        }
+
+        // GET: Users/Login
+        public IActionResult Login()
+        {
+            return View();
+        }
+        // POST: Users/Login
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(string email, string password)
+        {
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            {
+                ModelState.AddModelError(string.Empty, "Email và mật khẩu không được để trống.");
+                return View();
+            }
+
+            var user = await _context.User.FirstOrDefaultAsync(u => u.Email == email);
+
+            if (user != null && VerifyPassword(password, user.Password))
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, user.Name),
+                    new Claim(ClaimTypes.Email, user.Email),
+                    new Claim(ClaimTypes.Role, user.Role),
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
+                };
+
+                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+                await HttpContext.SignInAsync(
+                    CookieAuthenticationDefaults.AuthenticationScheme,
+                    new ClaimsPrincipal(claimsIdentity));
+
+                return RedirectToAction("Index", "Home");
+            }
+
+            ModelState.AddModelError(string.Empty, "Email hoặc mật khẩu không đúng.");
+            return View();
+        }
+
+        // POST: Users/Logout
+        // GET: Users/Logout
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Index", "Home");
+        }
+        // POST: Users/Logout
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout(string returnUrl = null)
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            if (returnUrl != null)
+            {
+                return LocalRedirect(returnUrl);
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+        }
+        private string HashPassword(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                return Convert.ToBase64String(hashedBytes);
+            }
+        }
+
+        private bool VerifyPassword(string password, string hashedPassword)
+        {
+            return HashPassword(password) == hashedPassword;
+        }
+
+
+        [Authorize]
+        public async Task<IActionResult> MyBookings()
+        {
+            var userEmail = User.FindFirstValue(ClaimTypes.Email);
+
+            if (string.IsNullOrEmpty(userEmail))
+            {
+                return NotFound("Không tìm thấy thông tin người dùng.");
+            }
+
+            var user = await _context.User
+                .Include(u => u.Bookings)
+                    .ThenInclude(b => b.room)
+                .FirstOrDefaultAsync(u => u.Email == userEmail);
+
+            if (user == null)
+            {
+                return NotFound("Không tìm thấy người dùng.");
+            }
+
+            return View(user.Bookings.ToList());
+        }
+
     }
 }

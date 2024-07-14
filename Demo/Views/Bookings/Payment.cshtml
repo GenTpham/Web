@@ -1,179 +1,74 @@
-﻿@model Demo.Models.Booking
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Demo.Models.Booking
 
 @{
     ViewData["Title"] = "Payment";
-    Layout = "_Test";
 }
 
-<style>
-    :root {
-        --primary-color: #3498db;
-        --secondary-color: #2ecc71;
-        --background-color: #f9f9f9;
-        --text-color: #333;
-        --border-color: #ddd;
-    }
+<h2>Payment</h2>
 
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: var(--background-color);
-        color: var(--text-color);
-        line-height: 1.6;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 50px auto;
-        padding: 20px;
-    }
-
-    h2 {
-        color: var(--primary-color);
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 2.5em;
-        font-weight: 300;
-    }
-
-    .card {
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 30px;
-        margin-bottom: 30px;
-        transition: all 0.3s ease;
-    }
-
-        .card:hover {
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-    .booking-details {
-        margin-bottom: 30px;
-    }
-
-        .booking-details h3 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            font-weight: 400;
-        }
-
-        .booking-details dl {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 10px;
-        }
-
-        .booking-details dt {
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        .booking-details dd {
-            margin-left: 0;
-        }
-
-    .qr-code {
-        text-align: center;
-        margin-top: 30px;
-    }
-
-        .qr-code img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 10px;
-        }
-
-    .pay-now-button {
-        margin-top: 20px;
-        text-align: center;
-    }
-
-        .pay-now-button button {
-            background-color: var(--secondary-color);
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            font-size: 18px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            width: 100%;
-        }
-
-            .pay-now-button button:hover {
-                background-color: #27ae60;
+<div>
+    <h4>Booking Details</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CheckInDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CheckInDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CheckOutDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CheckOutDate)
+        </dd>
+        <dt class="col-sm-2">
+            Room Type
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.room.RoomType)
+        </dd>
+        <dt class="col-sm-2">
+            Total Price
+        </dt>
+        <dd class="col-sm-10">
+            @{
+                var totalDays = (Model.CheckOutDate - Model.CheckInDate).Days;
+                var totalPrice = Model.room.Price * totalDays;
+                if (Model.Promotion != null)
+                {
+                    totalPrice -= totalPrice * Model.Promotion.DiscountPercentage / 100;
+                }
             }
-</style>
-
-<div class="container">
-    <h2>Payment Details</h2>
-
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card booking-details">
-                <h3>Booking Information</h3>
-                <dl>
-                    <dt>Name:</dt>
-                    <dd>@Model.Name</dd>
-
-                    <dt>Email:</dt>
-                    <dd>@Model.Email</dd>
-
-                    <dt>Phone:</dt>
-                    <dd>@Model.Phone</dd>
-
-                    <dt>Check In Date:</dt>
-                    <dd>@Model.CheckInDate.ToString("dd/MM/yyyy")</dd>
-
-                    <dt>Check Out Date:</dt>
-                    <dd>@Model.CheckOutDate.ToString("dd/MM/yyyy")</dd>
-
-                    <dt>Room Type:</dt>
-                    <dd>@Model.room.RoomType</dd>
-
-                    <dt>Room Number:</dt>
-                    <dd>@Model.room.RoomNumber</dd>
-
-                    <dt>Price per Night:</dt>
-                    <dd><span id="pricePerNight">@Model.room.Price.ToString("F2")</span>VND</dd>
-
-                    <dt>Total Nights:</dt>
-                    <dd><span id="totalNights"></span></dd>
-
-                    <dt>Total Price:</dt>
-                    <dd><span id="totalPrice"></span>VND</dd>
-                </dl>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card qr-code">
-                <h3>Scan to Pay</h3>
-                <img src="/img/450506684_1003239574730517_7267583256246432550_n.jpg" alt="QR Code for Payment" width="300">
-                <div class="pay-now-button">
-                    <button onclick="window.location.href='/Bookings/ThankYou'">Pay Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
+            $@totalPrice.ToString("F2")
+        </dd>
+    </dl>
 </div>
 
-<script>
-    var roomPrice = @Model.room.Price;
-    var checkInDate = new Date('@Model.CheckInDate.ToString("yyyy-MM-dd")');
-    var checkOutDate = new Date('@Model.CheckOutDate.ToString("yyyy-MM-dd")');
-
-    function calculatePrice() {
-        var totalNights = (checkOutDate - checkInDate) / (1000 * 60 * 60 * 24);
-        var totalPrice = roomPrice * totalNights;
-
-        document.getElementById('totalNights').textContent = totalNights;
-        document.getElementById('totalPrice').textContent = totalPrice.toFixed(2);
-    }
-
-    calculatePrice();
-</script>
+<form asp-action="ProcessPayment" asp-route-id="@Model.Id" method="post">
+    <!-- Add payment form fields here -->
+    <div class="form-group">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
+    </div>
+    <div class="form-group">
+        <label for="expiryDate">Expiry Date</label>
+        <input type="text" class="form-control" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+    </div>
+    <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="text" class="form-control" id="cvv" name="cvv" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Process Payment</button>
+</form>

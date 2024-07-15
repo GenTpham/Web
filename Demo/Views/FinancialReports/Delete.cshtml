@@ -2,7 +2,106 @@
 
 @{
     ViewData["Title"] = "Delete";
+    Layout = "_Admin";
 }
+
+    <style>
+        .delete-financial-report .btn-danger {
+            margin-top: 20px;
+        }
+
+        .delete-financial-report dl {
+            background-color: #fff5f5;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    /* Common styles for all pages */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    h1, h4 {
+        color: #2c3e50;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .btn-primary {
+        background-color: #3498db;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+    .btn-danger {
+        background-color: #e74c3c;
+        color: white;
+    }
+
+        .btn-danger:hover {
+            background-color: #c0392b;
+        }
+
+    .btn-info {
+        background-color: #2ecc71;
+        color: white;
+    }
+
+        .btn-info:hover {
+            background-color: #27ae60;
+        }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+        .table th, .table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .text-danger {
+        color: #e74c3c;
+    }
+    </style>
 
 <h1>Delete</h1>
 

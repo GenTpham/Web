@@ -1,0 +1,47 @@
+﻿@model Demo.Models.Booking
+
+<h2>Đặt phòng</h2>
+
+<form asp-action="BookRoom" method="post">
+    <div class="form-group">
+        <label asp-for="Name">Họ tên</label>
+        <input asp-for="Name" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" type="email" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone">Số điện thoại</label>
+        <input asp-for="Phone" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="CheckInDate">Ngày nhận phòng</label>
+        <input asp-for="CheckInDate" class="form-control" type="date" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="CheckOutDate">Ngày trả phòng</label>
+        <input asp-for="CheckOutDate" class="form-control" type="date" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Adult">Số người lớn</label>
+        <input asp-for="Adult" class="form-control" type="number" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Child">Số trẻ em</label>
+        <input asp-for="Child" class="form-control" type="number" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="RoomId">Loại phòng</label>
+        <select asp-for="RoomId" class="form-control" asp-items="ViewBag.RoomId" required></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="PromotionCode">Mã khuyến mãi</label>
+        <input asp-for="PromotionCode" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Request">Yêu cầu đặc biệt</label>
+        <textarea asp-for="Request" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Đặt phòng</button>
+</form>

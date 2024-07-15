@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Demo.Data;
 using Demo.Models;
+using System.Xml.Linq;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
 
 namespace Demo.Controllers
 {
@@ -158,6 +162,56 @@ namespace Demo.Controllers
         private bool FinancialReportExists(int id)
         {
           return (_context.FinancialReport?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+
+        // New method for generating PDF
+        public async Task<IActionResult> DownloadPdf()
+        {
+            var reports = await _context.FinancialReport.ToListAsync();
+
+            using (MemoryStream ms = new MemoryStream())
+            {
+                Document document = new Document(PageSize.A4, 25, 25, 30, 30);
+                PdfWriter writer = PdfWriter.GetInstance(document, ms);
+
+                document.Open();
+
+                // Add title
+                Font titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18);
+                Paragraph title = new Paragraph("Financial Reports", titleFont);
+                title.Alignment = Element.ALIGN_CENTER;
+                document.Add(title);
+                document.Add(Chunk.NEWLINE);
+
+                // Create table
+                PdfPTable table = new PdfPTable(5);
+                table.WidthPercentage = 100;
+
+                // Add table headers
+                string[] headers = { "Report Date", "Total Revenue", "Total Expenses", "Net Profit", "Number of Bookings" };
+                foreach (string header in headers)
+                {
+                    PdfPCell cell = new PdfPCell(new Phrase(header, FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12)));
+                    cell.HorizontalAlignment = Element.ALIGN_CENTER;
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    table.AddCell(cell);
+                }
+
+                // Add data to table
+                foreach (var report in reports)
+                {
+                    table.AddCell(report.ReportDate.ToShortDateString());
+                    table.AddCell(report.TotalRevenue.ToString("C"));
+                    table.AddCell(report.TotalExpenses.ToString("C"));
+                    table.AddCell(report.NetProfit.ToString("C"));
+                    table.AddCell(report.NumberOfBookings.ToString());
+                }
+
+                document.Add(table);
+                document.Close();
+
+                return File(ms.ToArray(), "application/pdf", "FinancialReports.pdf");
+            }
         }
     }
 }

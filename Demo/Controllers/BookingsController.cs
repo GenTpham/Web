@@ -35,8 +35,6 @@ namespace Demo.Controllers
             }
 
             var booking = await _context.Booking
-                .Include(b => b.Promotion)
-                .Include(b => b.User)
                 .Include(b => b.room)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (booking == null)
@@ -50,7 +48,7 @@ namespace Demo.Controllers
         // GET: Bookings/Create
         public IActionResult Create()
         {
-            ViewData["PromotionId"] = new SelectList(_context.Set<Promotion>(), "Id", "Name");
+            ViewData["PromotionId"] = new SelectList(_context.Promotion, "Id", "Name");
             ViewData["UserId"] = new SelectList(_context.User, "Id", "Name");
             ViewData["RoomId"] = new SelectList(_context.Room, "Id", "RoomType");
             return View();
@@ -58,11 +56,10 @@ namespace Demo.Controllers
 
         // POST: Bookings/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // POST: Bookings/Create
-        // POST: Bookings/Create
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Email,Phone,CheckInDate,CheckOutDate,Adult,Child,Request,RoomId,UserId,PromotionCode")] Booking booking)
+        public async Task<IActionResult> Create([Bind("Id,Name,Email,Phone,CheckInDate,CheckOutDate,Adult,Child,Request,PromotionCode,RoomId,UserId,IsCheckedOut,ActualCheckOutDate,PromotionId")] Booking booking)
         {
             if (ModelState.IsValid)
             {
@@ -70,11 +67,12 @@ namespace Demo.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Payment), new { id = booking.Id });
             }
-            ViewData["PromotionId"] = new SelectList(_context.Set<Promotion>(), "Id", "Name");
-            ViewData["RoomId"] = new SelectList(_context.Room, "Id", "RoomType", booking.RoomId);
+            ViewData["PromotionId"] = new SelectList(_context.Promotion, "Id", "Name", booking.PromotionId);
             ViewData["UserId"] = new SelectList(_context.User, "Id", "Name", booking.UserId);
+            ViewData["RoomId"] = new SelectList(_context.Room, "Id", "RoomType", booking.RoomId);
             return View(booking);
         }
+
         // GET: Bookings/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -88,7 +86,7 @@ namespace Demo.Controllers
             {
                 return NotFound();
             }
-            ViewData["PromotionId"] = new SelectList(_context.Set<Promotion>(), "Id", "Name", booking.PromotionId);
+            ViewData["PromotionId"] = new SelectList(_context.Promotion, "Id", "Name", booking.PromotionId);
             ViewData["UserId"] = new SelectList(_context.User, "Id", "Name", booking.UserId);
             ViewData["RoomId"] = new SelectList(_context.Room, "Id", "RoomType", booking.RoomId);
             return View(booking);
@@ -126,7 +124,7 @@ namespace Demo.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PromotionId"] = new SelectList(_context.Set<Promotion>(), "Id", "Name", booking.PromotionId);
+            ViewData["PromotionId"] = new SelectList(_context.Promotion, "Id", "Name", booking.PromotionId);
             ViewData["UserId"] = new SelectList(_context.User, "Id", "Name", booking.UserId);
             ViewData["RoomId"] = new SelectList(_context.Room, "Id", "RoomType", booking.RoomId);
             return View(booking);
@@ -176,7 +174,6 @@ namespace Demo.Controllers
         {
           return (_context.Booking?.Any(e => e.Id == id)).GetValueOrDefault();
         }
-
         // GET: Bookings/Checkout/5
         public async Task<IActionResult> Checkout(int? id)
         {
@@ -218,17 +215,19 @@ namespace Demo.Controllers
             _context.Update(booking);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("MyBookings", "Users");
         }
 
-        // GET: Bookings/Payment/{id}
-        public async Task<IActionResult> Payment(int id)
+        public async Task<IActionResult> Cancel(int? id)
         {
+            if (id == null || _context.Booking == null)
+            {
+                return NotFound();
+            }
+
             var booking = await _context.Booking
                 .Include(b => b.room)
-                .Include(b => b.Promotion)
                 .FirstOrDefaultAsync(m => m.Id == id);
-
             if (booking == null)
             {
                 return NotFound();
@@ -236,9 +235,62 @@ namespace Demo.Controllers
 
             return View(booking);
         }
+
+        // POST: Bookings/Cancel/5
+        [HttpPost, ActionName("Cancel")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CancelConfirmed(int id)
+        {
+            if (_context.Booking == null)
+            {
+                return Problem("Entity set 'DemoContext.Booking' is null.");
+            }
+            var booking = await _context.Booking.FindAsync(id);
+            if (booking != null)
+            {
+                _context.Booking.Remove(booking);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction("MyBookings", "Users");
+
+        }
+
+        // GET: Bookings/Payment/5
+        public async Task<IActionResult> Payment(int? id)
+        {
+            if (id == null || _context.Booking == null)
+            {
+                return NotFound();
+            }
+
+            var booking = await _context.Booking
+                .Include(b => b.room)
+                .Include(b => b.Promotion)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (booking == null)
+            {
+                return NotFound();
+            }
+            int totalDays = (booking.CheckOutDate - booking.CheckInDate).Days;
+            // Tính toán giá tiền sau khuyến mãi
+            decimal originalPrice = booking.room.Price * totalDays;
+            decimal discountedPrice = originalPrice;
+            if (booking.Promotion != null)
+            {
+                discountedPrice = originalPrice * (100 - booking.Promotion.DiscountPercentage) / 100;
+            }
+            ViewBag.TotalDays = totalDays;
+            ViewBag.OriginalPrice = originalPrice;
+            ViewBag.DiscountedPrice = discountedPrice;
+
+            return View(booking);
+        }
+
+        // POST: Bookings/Payment/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ProcessPayment(int id, string cardNumber, string expiryDate, string cvv)
+        public async Task<IActionResult> Payment(int id, string paymentMethod)
         {
             var booking = await _context.Booking.FindAsync(id);
             if (booking == null)
@@ -248,34 +300,17 @@ namespace Demo.Controllers
 
             // Xử lý thanh toán ở đây (tích hợp với cổng thanh toán thực tế)
             // Đây chỉ là mô phỏng
-            bool paymentSuccessful = true;
+            booking.IsCheckedOut = true;
+            booking.ActualCheckOutDate = DateTime.Now;
 
-            if (paymentSuccessful)
-            {
-                _context.Update(booking);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(PaymentConfirmation), new { id = booking.Id });
-            }
-            else
-            {
-                ModelState.AddModelError("", "Payment processing failed. Please try again.");
-                return View("Payment", booking);
-            }
+            _context.Update(booking);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(ThankYou));
         }
-        public async Task<IActionResult> PaymentConfirmation(int id)
+        public IActionResult ThankYou()
         {
-            var booking = await _context.Booking
-                .Include(b => b.room)
-                .FirstOrDefaultAsync(m => m.Id == id);
-
-            if (booking == null)
-            {
-                return NotFound();
-            }
-
-            return View(booking);
+            return View();
         }
-
-
     }
 }

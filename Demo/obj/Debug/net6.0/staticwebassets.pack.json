@@ -77,6 +77,10 @@
       "PackagePath": "staticwebassets\\img\\Contact\\9.jpg"
     },
     {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\Phuoc.jpg",
+      "PackagePath": "staticwebassets\\img\\Phuoc.jpg"
+    },
+    {
       "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\about-1.jpg",
       "PackagePath": "staticwebassets\\img\\about-1.jpg"
     },
@@ -99,6 +103,18 @@
     {
       "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\carousel-2.jpg",
       "PackagePath": "staticwebassets\\img\\carousel-2.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\danh1.jpg",
+      "PackagePath": "staticwebassets\\img\\danh1.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\danh2.jpg",
+      "PackagePath": "staticwebassets\\img\\danh2.jpg"
+    },
+    {
+      "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\danhle.jpg",
+      "PackagePath": "staticwebassets\\img\\danhle.jpg"
     },
     {
       "Id": "E:\\New folder (3)\\Demo\\Demo\\wwwroot\\img\\room-1.jpg",

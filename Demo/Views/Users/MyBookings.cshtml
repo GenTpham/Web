@@ -13,8 +13,9 @@
             <tr>
                 <th>Phòng</th>
                 <th>Ngày nhận phòng</th>
-                <th>Ngày trả phòng</th>
+                <th>Ngày trả phòng dự kiến</th>
                 <th>Trạng thái</th>
+                <th>Ngày trả phòng</th>
                 <th>Thao tác</th>
             </tr>
         </thead>
@@ -27,11 +28,16 @@
                     <td>@item.CheckOutDate.ToShortDateString()</td>
                     <td>@(item.IsCheckedOut ? "Đã trả phòng" : "Đang đặt")</td>
                     <td>
-                        <a asp-controller="Bookings" asp-action="Details" asp-route-id="@item.Id">Chi tiết</a>
+                        @Html.DisplayFor(modelItem => item.ActualCheckOutDate)
+                    </td>
+                    <td>
+                        <a asp-controller="Bookings" asp-action="Details" asp-route-id="@item.Id">Details</a> |
                         @if (!item.IsCheckedOut)
                         {
                             <a asp-controller="Bookings" asp-action="Edit" asp-route-id="@item.Id">Chỉnh sửa</a>
                         }
+                        <a asp-controller="Bookings" asp-action="Checkout" asp-route-id="@item.Id">Check Out</a>
+                        <a asp-controller="Bookings" asp-action="Cancel" asp-route-id="@item.Id">Cancel</a>
                     </td>
                 </tr>
             }

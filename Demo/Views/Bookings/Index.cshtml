@@ -1,117 +1,134 @@
 ﻿@model IEnumerable<Demo.Models.Booking>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Quản lý đặt phòng";
+    Layout = "_Admin";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Phone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CheckInDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CheckOutDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Adult)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Child)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Request)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PromotionCode)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.room)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.User)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsCheckedOut)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ActualCheckOutDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Promotion)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CheckInDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CheckOutDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Adult)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Child)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Request)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PromotionCode)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.room.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.User.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsCheckedOut)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ActualCheckOutDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Promotion.Description)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                    @if (!item.IsCheckedOut)
-                    {
-                        <a asp-action="Checkout" asp-route-id="@item.Id" class="btn btn-warning">Checkout</a>
-                    }
-            </td>
-        </tr>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Quản lý đặt phòng</title>
+    <style>
+        /* Styles cho trang đặt phòng */
+.booking-container {
+    background-color: var(--light);
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-    </tbody>
-</table>
+
+.booking-container h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.create-new {
+    display: inline-block;
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.create-new:hover {
+    background-color: var(--dark-blue);
+}
+
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.booking-table th,
+.booking-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--grey);
+}
+
+.booking-table th {
+    background-color: var(--grey);
+    font-weight: 600;
+}
+
+.booking-table tr:hover {
+    background-color: var(--light-blue);
+}
+
+.action-links a {
+    color: var(--blue);
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.action-links a:hover {
+    color: var(--dark-blue);
+}
+
+/* Responsive adjustments */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+        <p>
+            <a href="@Url.Action("Create")" class="create-new">Tạo mới</a>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Name)</th>
+                    <th>@Html.DisplayNameFor(model => model.Email)</th>
+                    <th>@Html.DisplayNameFor(model => model.Phone)</th>
+                    <th>@Html.DisplayNameFor(model => model.CheckInDate)</th>
+                    <th>@Html.DisplayNameFor(model => model.CheckOutDate)</th>
+                    <th>@Html.DisplayNameFor(model => model.Adult)</th>
+                    <th>@Html.DisplayNameFor(model => model.Child)</th>
+                    <th>@Html.DisplayNameFor(model => model.Request)</th>
+                    <th>@Html.DisplayNameFor(model => model.PromotionCode)</th>
+                    <th>@Html.DisplayNameFor(model => model.room)</th>
+                    <th>@Html.DisplayNameFor(model => model.User)</th>
+                    <th>@Html.DisplayNameFor(model => model.IsCheckedOut)</th>
+                    <th>@Html.DisplayNameFor(model => model.ActualCheckOutDate)</th>
+                    <th>@Html.DisplayNameFor(model => model.Promotion)</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Phone)</td>
+                        <td>@Html.DisplayFor(modelItem => item.CheckInDate)</td>
+                        <td>@Html.DisplayFor(modelItem => item.CheckOutDate)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Adult)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Child)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Request)</td>
+                        <td>@Html.DisplayFor(modelItem => item.PromotionCode)</td>
+                        <td>@Html.DisplayFor(modelItem => item.room.RoomType)</td>
+                        <td>@Html.DisplayFor(modelItem => item.User.Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.IsCheckedOut)</td>
+                        <td>@Html.DisplayFor(modelItem => item.ActualCheckOutDate)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Promotion.Name)</td>
+                        <td class="action-links">
+                            <a href="@Url.Action("Edit", new { id = item.Id })">Sửa</a> |
+                            <a href="@Url.Action("Details", new { id = item.Id })">Chi tiết</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

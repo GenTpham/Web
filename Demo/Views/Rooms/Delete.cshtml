@@ -5,112 +5,104 @@
     Layout = "_Admin";
 }
 <style>
-    /* Đặt nền cho toàn bộ trang */
+    .financial-reports h1 {
+        margin-bottom: 20px;
+    }
+
+    .financial-reports .table {
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .financial-reports .btn-sm {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    /* Common styles for all pages */
     body {
-        font-family: 'Roboto', sans-serif;
-        background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
         color: #333;
-        margin: 0;
-        padding: 20px;
     }
 
-    /* Tiêu đề chính */
-    h1 {
-        font-size: 2.5em;
-        color: #ffffff;
-        text-align: center;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 4px #000000;
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
     }
 
-    /* Tiêu đề phụ */
-    h3 {
-        font-size: 1.8em;
-        color: #ffffff;
-        margin-bottom: 10px;
-        text-shadow: 1px 1px 2px #000000;
-        text-align: center;
+    h1, h4 {
+        color: #2c3e50;
     }
 
-    h4 {
-        font-size: 1.5em;
-        color: #ffffff;
-        margin-bottom: 10px;
-        text-shadow: 1px 1px 2px #000000;
-        text-align: center;
-    }
-
-    /* Đường phân cách */
-    hr {
-        border-top: 1px solid #ffffff;
-        margin-bottom: 20px;
-    }
-
-    /* Bố cục hàng và cột */
-    .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    .col-sm-2 {
-        font-weight: bold;
-        color: #ffffff;
-    }
-
-    .col-sm-10 {
-        color: #ffffff;
-    }
-
-    /* Danh sách định nghĩa */
-    dl {
-        display: flex;
-        flex-wrap: wrap;
-        background: #333;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-    }
-
-    dt {
-        margin-bottom: 10px;
-    }
-
-    dd {
-        margin-bottom: 10px;
-    }
-
-    /* Nút xóa */
-    .btn-danger {
-        background-color: #eb4d4b;
-        border-color: #eb4d4b;
-        color: #fff;
-        padding: 10px 20px;
+    .btn {
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 5px 0;
+        border: none;
         border-radius: 4px;
-        font-size: 1em;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .btn-primary {
+        background-color: #3498db;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+    .btn-danger {
+        background-color: #e74c3c;
+        color: white;
     }
 
         .btn-danger:hover {
             background-color: #c0392b;
-            box-shadow: 0 4px 8px rgba(192, 57, 43, 0.2);
         }
 
-    /* Liên kết trở về danh sách */
-    div a {
-        color: #ff7e5f;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        margin-top: 20px;
+    .btn-info {
+        background-color: #2ecc71;
+        color: white;
     }
 
-        div a:hover {
-            text-decoration: underline;
+        .btn-info:hover {
+            background-color: #27ae60;
         }
 
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+        .table th, .table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .text-danger {
+        color: #e74c3c;
+    }
 </style>
 <h1>Delete</h1>
 

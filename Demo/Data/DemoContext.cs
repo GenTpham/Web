@@ -35,5 +35,7 @@ namespace Demo.Data
         public DbSet<Demo.Models.FinancialReport>? FinancialReport { get; set; }
 
         public DbSet<Demo.Models.Promotion>? Promotion { get; set; }
+
+        public DbSet<Demo.Models.Rating>? Rating { get; set; }
     }
 }

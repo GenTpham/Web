@@ -65,6 +65,7 @@ namespace Demo.Controllers
             {
                 _context.Add(booking);
                 await _context.SaveChangesAsync();
+      
                 return RedirectToAction(nameof(Payment), new { id = booking.Id });
             }
             ViewData["PromotionId"] = new SelectList(_context.Promotion, "Id", "Name", booking.PromotionId);
@@ -300,7 +301,6 @@ namespace Demo.Controllers
 
             // Xử lý thanh toán ở đây (tích hợp với cổng thanh toán thực tế)
             // Đây chỉ là mô phỏng
-            booking.IsCheckedOut = true;
             booking.ActualCheckOutDate = DateTime.Now;
 
             _context.Update(booking);

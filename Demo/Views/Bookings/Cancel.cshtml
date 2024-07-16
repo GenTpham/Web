@@ -1,67 +1,49 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Demo.Models.Booking
 @{
-}
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-@model Demo.Models.Booking
-
-@{
-    ViewData["Title"] = "Cancel Booking";
+    ViewData["Title"] = "Hủy Đặt Phòng";
+    Layout = "_Layout"; // Đảm bảo sử dụng layout phù hợp
 }
 
-<h1>Cancel Booking</h1>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-danger text-white text-center">
+                    <h2 class="mb-0">Hủy Đặt Phòng</h2>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-4">Bạn có chắc chắn muốn hủy đặt phòng này?</h4>
+                    <div class="alert alert-warning" role="alert">
+                        Lưu ý: Việc hủy đặt phòng có thể phải chịu phí hủy tùy theo chính sách của khách sạn.
+                    </div>
+                    <h5 class="mt-4 mb-3">Chi Tiết Đặt Phòng:</h5>
+                    <dl class="row">
+                        <dt class="col-sm-4">Họ và tên:</dt>
+                        <dd class="col-sm-8">@Model.Name</dd>
 
-<h3>Are you sure you want to cancel this booking?</h3>
-<div>
-    <h4>Booking</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Phone)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Phone)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CheckInDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CheckInDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CheckOutDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CheckOutDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.room.RoomType)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.room.RoomType)
-        </dd>
-    </dl>
+                        <dt class="col-sm-4">Email:</dt>
+                        <dd class="col-sm-8">@Model.Email</dd>
 
-    <form asp-action="Cancel">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Cancel Booking" class="btn btn-danger" /> |
-        <a asp-action="BookingList" class="btn btn-secondary">Back to List</a>
-    </form>
+                        <dt class="col-sm-4">Số điện thoại:</dt>
+                        <dd class="col-sm-8">@Model.Phone</dd>
+
+                        <dt class="col-sm-4">Ngày nhận phòng:</dt>
+                        <dd class="col-sm-8">@Model.CheckInDate.ToShortDateString()</dd>
+
+                        <dt class="col-sm-4">Ngày trả phòng:</dt>
+                        <dd class="col-sm-8">@Model.CheckOutDate.ToShortDateString()</dd>
+
+                        <dt class="col-sm-4">Loại phòng:</dt>
+                        <dd class="col-sm-8">@Model.room.RoomType</dd>
+                    </dl>
+
+                    <form asp-action="Cancel" class="text-center mt-4">
+                        <input type="hidden" asp-for="Id" />
+                        <button type="submit" class="btn btn-danger">Xác Nhận Hủy Đặt Phòng</button>
+                        <a asp-action="BookingList" class="btn btn-secondary">Quay Lại Danh Sách</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
